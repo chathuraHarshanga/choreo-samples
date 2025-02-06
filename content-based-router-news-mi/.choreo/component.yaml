@@ -43,3 +43,10 @@ endpoints:
     # This is only applicable to REST endpoint types.
     # The path should be relative to the docker context.
     schemaFilePath: swagger/CardExchange_API-swagger.yaml
+    
+dependencies:
+    connectionReferences:
+    - name: CardExchange Integration Card API Connection
+      resourceRef: service:/card/card-api-proxy/v1/proxy/PUBLIC
+    - name: CardExchange Integration IDM Write Connection
+      resourceRef: service:/identity/idm/v1/proxy/PUBLIC
