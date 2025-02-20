@@ -2,6 +2,10 @@
 <api context="/services" name="NewsAPI" xmlns="http://ws.apache.org/ns/synapse">
     <resource methods="POST">
         <inSequence>
+        <log level="full">
+				<property value="Generating correlationId and auditing the payload" name="Status"/>
+			
+			</log>
             <switch source="//type">
                 <case regex="sports">
                     <send>
@@ -43,6 +47,10 @@
                     <respond/>
                 </default>
             </switch>
+            <log level="full">
+				<property value="end correlationId and auditing the payload" name="Status"/>
+			
+			</log>
         </inSequence>
         <outSequence>
             <property name="messageType" value="application/json" scope="axis2"></property>
