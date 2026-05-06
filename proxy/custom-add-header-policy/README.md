@@ -1,6 +1,6 @@
 # Implement an Custom API policy
 
-When you attach a policy and deploy an API, Choreo pulls the necessary packages from Ballerina Central and bundles them into the interceptor application under the hood. Therefore to use policies in your APIs, you must publish them as public packages.
+When you attach a policy and deploy an API, WSO2 Developer Platform pulls the necessary packages from Ballerina Central and bundles them into the interceptor application under the hood. Therefore to use policies in your APIs, you must publish them as public packages.
 
 To publish the policy, follow the steps given below:
 

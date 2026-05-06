@@ -3,7 +3,7 @@
 This sample shows how you can deploy services that communicate with each other using mTLS. 
 The server will only accept requests from clients that present a valid certificate and respond with greeting message that contains the client's identity.
 The client's identity is extracted from the CN of the certificate presented by the client. 
-For this sample, the client application is deployed as a manual trigger on Choreo.
+For this sample, the client application is deployed as a manual trigger on WSO2 Developer Platform.
 
 
 ## Generate Certificates
@@ -17,10 +17,10 @@ Run the following commands to generate the certificates.
 ```
 
 Note: In order to generate the server certificate correctly, you need to provide the server's hostname for the Subject Alternative Name (SAN). 
-At the moment, you need to deploy the server component to Choreo, and retrieve the hostname in the **Project** endpoint from the component **Overview** page.
+At the moment, you need to deploy the server component to WSO2 Developer Platform, and retrieve the hostname in the **Project** endpoint from the component **Overview** page.
 Once you have the hostname, update the `DNS.1` field in the [server-csr.cnf](certs/server-csr.cnf) file with the hostname and run the script to generate the certificates.
 
-## Steps to Deploy in Choreo
+## Steps to Deploy in WSO2 Developer Platform
 
 ### Deploy the server
 1. Create a new Service component with following parameters

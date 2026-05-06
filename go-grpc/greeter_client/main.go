@@ -35,7 +35,7 @@ func main() {
 	}
 	defer conn.Close()
 	c := greeter.NewGreeterClient(conn)
-	name := "Choreo"
+	name := "WSO2 Developer Platform"
 	r, err := c.SayHello(context.Background(), &greeter.HelloRequest{Name: name})
 	if err != nil {
 		log.Fatalf("Could not greet: %v", err)

@@ -1,6 +1,6 @@
 openapi: 3.0.3
 info:
-  title: Choreo Samples - Reading List - Python REST API
+  title: WSO2 Developer Platform Samples - Reading List - Python REST API
   description: >-
     This is a sample API specification for a simple reading list application with in-memory cache
     written in Python.
@@ -9,7 +9,7 @@ info:
     url: http://www.apache.org/licenses/LICENSE-2.0.html
   version: 1.0.0
 externalDocs:
-  description: Choreo
+  description: WSO2 Developer Platform
   url: https://choreo.dev
 servers:
   - url: http://localhost:5000

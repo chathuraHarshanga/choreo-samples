@@ -2,10 +2,10 @@
 
 Simple REST API that returns calls Petstore endpoint and gives the response. The Petstore endpoint is configurable via an environment variable. 
 
-## Deploying on Choreo
+## Deploying on WSO2 Developer Platform
 1. Creating component
     - Fork this repository
-    - Login to [Choreo console](https://console.choreo.dev/)
+    - Login to [WSO2 Developer Platform console](https://console.choreo.dev/)
     - Navigate to create a `Service` component.
     - Provide a name and description for the component.
     - Authorize and select the GitHub details.
@@ -20,4 +20,4 @@ Simple REST API that returns calls Petstore endpoint and gives the response. The
     - Build and deploy the component.
 
 ## Testing
-Once the component is deployed, go to the Choreo Test console and use the Swagger console to try out the API.
+Once the component is deployed, go to the WSO2 Developer Platform Test console and use the Swagger console to try out the API.

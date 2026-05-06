@@ -10,9 +10,9 @@ function testGreetingForSpecificName() returns error? {
     test:assertEquals(response.statusCode, 200);
     json payload = check response.getJsonPayload();
     Greeting greeting = check payload.cloneWithType(Greeting);
-    test:assertEquals(greeting.'from, "Choreo");
+    test:assertEquals(greeting.'from, "WSO2 Developer Platform");
     test:assertEquals(greeting.to, "Alice");
-    test:assertEquals(greeting.message, "Welcome to Choreo!");
+    test:assertEquals(greeting.message, "Welcome to WSO2 Developer Platform!");
 }
 
 // Test 2: Test greeting response structure and types

@@ -1,13 +1,13 @@
-# Choreo Sample - Private Package Usage
+# WSO2 Developer Platform Sample - Private Package Usage
 
-This sample demonstrates how to deploy a Ballerina component in Choreo that uses private packages.
+This sample demonstrates how to deploy a Ballerina component in WSO2 Developer Platform that uses private packages.
 
 The sample contains following directories:
 
 - [greeting_lib](greeting_lib): contains a Ballerina package that is published to the Ballerina Central.
 - [greeting_service](greeting_service): contains a Ballerina service that uses the `greeting_lib` package.
 
-In order to try out this sample, you need to use same organizations in Choreo and Ballerina Central.
+In order to try out this sample, you need to use same organizations in WSO2 Developer Platform and Ballerina Central.
 
 ## Update the source files with your organization name
 
@@ -19,7 +19,7 @@ In order to try out this sample, you need to use same organizations in Choreo an
 2. Replace the package import `import <your-organization-name>/greeting_lib;` in the [service.bal](greeting_service/service.bal) file with your organization name.
 
 
-You can use the organization settings page to retrieve the organization name. Make sure the organization name is same as the organization name you used in Choreo and Ballerina Central.
+You can use the organization settings page to retrieve the organization name. Make sure the organization name is same as the organization name you used in WSO2 Developer Platform and Ballerina Central.
 
 ## Publishing the package to Ballerina Central
 
@@ -55,9 +55,9 @@ Invoke the service using the following cURL command:
 curl http://localhost:9090/greeting?name=Choreo
 ```
 
-## Create the service in Choreo
+## Create the service in WSO2 Developer Platform
 
-Use the following configuration when creating this component in Choreo as Service:
+Use the following configuration when creating this component in WSO2 Developer Platform as Service:
 
 - Build Pack: **Ballerina**
 - Project Path: `ballerina/private-package-usage/greeting_service`

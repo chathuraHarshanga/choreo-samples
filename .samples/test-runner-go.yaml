@@ -1,5 +1,5 @@
 displayName: Test Runner Go
-description: Write test cases in Go to test applications hosted in Choreo
+description: Write test cases in Go to test applications hosted in WSO2 Developer Platform
 componentType: test-runner
 buildPack: go
 repositoryUrl: https://github.com/wso2/choreo-samples/

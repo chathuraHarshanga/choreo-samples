@@ -1,6 +1,6 @@
 # JMS Integration Sample - Micro Integrator
 
-This sample demonstrates how to deploy a Micro Integrator component in Choreo that uses JMS transport.
+This sample demonstrates how to deploy a Micro Integrator component in WSO2 Developer Platform that uses JMS transport.
 
 ## Prerequisites
 - Running ActiveMQ broker in your local machine.
@@ -9,10 +9,10 @@ This sample demonstrates how to deploy a Micro Integrator component in Choreo th
     ngrok tcp 10088
     ```
 
-## Deploying the component in Choreo
+## Deploying the component in WSO2 Developer Platform
 1. Fork this repository.
-2. Create an `Service` component in Choreo.
-    - Log in to Choreo and click on the `Create Component` button.
+2. Create an `Service` component in WSO2 Developer Platform.
+    - Log in to WSO2 Developer Platform and click on the `Create Component` button.
     - Select the `Service` component type.
     - Select the `WSO2 Micro Integrator` build pack.
     - Select the `jms-integration-mi` directory as the project directory.

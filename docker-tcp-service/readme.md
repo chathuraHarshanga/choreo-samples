@@ -2,7 +2,7 @@
 
 This sample demonstrates how you can deploy server-client services utilizing TCP for communication. The setup emphasizes the use of a reliable, connection-oriented data exchange between these components within a networked context.
 
-## Steps to Deploy in Choreo
+## Steps to Deploy in WSO2 Developer Platform
 
 ### Deploy the server
 

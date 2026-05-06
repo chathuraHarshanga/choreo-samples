@@ -28,7 +28,7 @@ import (
 )
 
 // ProtectedRoutes sets up the protected routes for the application.
-// These routes should be configured as `protected routes` from the Choreo Console, when deploying the application.
+// These routes should be configured as `protected routes` from the WSO2 Developer Platform Console, when deploying the application.
 // Otherwise, the application will not work as expected and users may access these routes without a proper authentication.
 func ProtectedRoutes(r *gin.Engine, s *service.Service) {
 	r.GET("/dashboard", handleDashboard(s))

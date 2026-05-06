@@ -1,6 +1,6 @@
 openapi: 3.0.1
 info:
-  title: Choreo User Store
+  title: WSO2 Developer Platform User Store
   description: This is a sample service that manages a list of users
   contact: {}
   version: "1.0"

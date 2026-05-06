@@ -2,9 +2,9 @@
 
 Webhook to send GitHub events to an email address.
 
-## Deploying in Choreo
+## Deploying in WSO2 Developer Platform
 1. Create Webhook Component
-    - Login to [Choreo](https://console.choreo.dev/)
+    - Login to [WSO2 Developer Platform](https://console.choreo.dev/)
     - Navigate to create a `Webhook` component
     - Provide a name and description for the component
     - Provide `https://github.com/wso2/choreo-samples` as the `Public Repository URL`

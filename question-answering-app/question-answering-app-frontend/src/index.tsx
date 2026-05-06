@@ -55,7 +55,7 @@ export default function App() {
   if (!signedIn) {
     return (
       <div className="content">
-        <h1 className="header-title">Choreo Q&A Bot</h1>
+        <h1 className="header-title">WSO2 Developer Platform Q&A Bot</h1>
         <h4 className="header-description">
           Sample demo of a Q&A chatbot for&nbsp;
           <a
@@ -63,7 +63,7 @@ export default function App() {
             target="_blank"
             rel="noreferrer noopener"
           >
-            Choreo documentation
+            WSO2 Developer Platform documentation
           </a>
           .
         </h4>

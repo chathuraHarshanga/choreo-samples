@@ -1,4 +1,4 @@
-# Choreo sample web app with angular
+# WSO2 Developer Platform sample web app with angular
 
 ### Initilized with [Angular CLI](https://angular.io/cli)
 
@@ -12,7 +12,7 @@ npx @angular/cli new angular-spa --defaults
 - Provide component name and description.
 - Select `Angular SPA` tile and create component.
 
-### Use the following configuration when creating this component in Choreo:
+### Use the following configuration when creating this component in WSO2 Developer Platform:
 
 - Build Pack: WebApp
 - Build Context Path: `angular-single-page-app`

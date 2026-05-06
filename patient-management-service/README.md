@@ -2,12 +2,12 @@
 
 This is a simple patient management REST service developed using Ballerina. This service provides functionalities to manage patient data, including adding a new patient, retrieving patient details by name, and listing all patients.
 
-## Deploy in Choreo
+## Deploy in WSO2 Developer Platform
 
-Follow these steps to deploy the application in Choreo.
+Follow these steps to deploy the application in WSO2 Developer Platform.
 
 1. Create a component
-     - Sign in to [Choreo](https://wso2.com/choreo/)
+     - Sign in to [WSO2 Developer Platform](https://wso2.com/choreo/)
      - If you already have one or more components in your project, click **+ Create**. Otherwise, click the **Service** card. 
      - Provide a name and description for the component.
      - Click **`Try with Sample URL`**.

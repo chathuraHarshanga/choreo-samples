@@ -2,11 +2,11 @@
 
 This integration allows you to send weather updates to an email address.
 
-## Deploying in Choreo
+## Deploying in WSO2 Developer Platform
 
 1. Create a `Manual Task` component
     - Fork this repository
-    - Login to [Choreo](https://wso2.com/choreo/)
+    - Login to [WSO2 Developer Platform](https://console.choreo.dev/login)
     - Navigate to create a `Manual Task` component
     - Provide a name and description for the component
     - Authorize and select the GitHub details

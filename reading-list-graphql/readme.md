@@ -1,4 +1,4 @@
-# Choreo Sample GraphQL Service - Reading List
+# WSO2 Developer Platform Sample GraphQL Service - Reading List
 
 ## Repository File Structure
 
@@ -9,22 +9,22 @@ Note: The following file paths are relative to the path /ballerina/readling-list
 | ---------------------- | --------------------------------------------------------------------------------------------- |
 | service.bal            | GraphQL service code written in the Ballerina language.                                       |
 | Ballerina.toml         | Ballerina configuration file.                                                                 |
-| .choreo/endpoints.yaml | Choreo-specific configuration that provides information about how Choreo exposes the service. |
+| .choreo/endpoints.yaml | WSO2 Developer Platform-specific configuration that provides information about how the service is exposed. |
 
 ## Deploy Application
 
-Please refer to the Choreo documentation under the [Develop a Ballerina GraphQL API](https://wso2.com/choreo/docs/develop-components/develop-services/develop-a-ballerina-graphql-api/) section to learn how to deploy the application.
+Please refer to the documentation under the [Develop a Ballerina GraphQL API](https://wso2.com/choreo/docs/develop-components/develop-services/develop-a-ballerina-graphql-api/) section to learn how to deploy the application.
 
-### Use the following configuration when creating this component in Choreo:
+### Use the following configuration when creating this component in WSO2 Developer Platform:
 
 - Build Pack: **Ballerina**
 - Project Path: `/reading-list-graphql`
 
-The [endpoints.yaml](.choreo/endpoints.yaml) file contains the endpoint configurations that are used by the Choreo to expose the service.
+The [endpoints.yaml](.choreo/endpoints.yaml) file contains the endpoint configurations that are used by the WSO2 Developer Platform to expose the service.
 
-### Test the service in Choreo
+### Test the service in WSO2 Developer Platform
 
-Deploy the created component in Choreo and navigate to the test page. In the GraphQL console, execute the below sample query to add a book item to the reading list:
+Deploy the created component in WSO2 Developer Platform and navigate to the test page. In the GraphQL console, execute the below sample query to add a book item to the reading list:
 
 ```
 mutation { addBook(book: {title: "Sample Book Name", author: "Test Author"}) { id title author status } }

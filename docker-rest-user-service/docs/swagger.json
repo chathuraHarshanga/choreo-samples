@@ -2,7 +2,7 @@
     "swagger": "2.0",
     "info": {
         "description": "This is a sample service that manages a list of users",
-        "title": "Choreo User Store",
+        "title": "WSO2 Developer Platform User Store",
         "contact": {},
         "version": "1.0"
     },

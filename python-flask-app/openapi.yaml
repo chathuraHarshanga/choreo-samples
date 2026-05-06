@@ -25,7 +25,7 @@ info:
     url: http://www.apache.org/licenses/LICENSE-2.0.html
   version: 1.0.0
 externalDocs:
-  description: Choreo
+  description: WSO2 Developer Platform
   url: https://choreo.dev
 servers:
   - url: http://localhost:5000

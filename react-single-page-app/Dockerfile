@@ -50,6 +50,7 @@ COPY --from=build /app/build /usr/share/nginx/html
 
 # Ensure proper permissions for NGINX to serve the files
 USER root
+RUN apk add --no-cache --upgrade libcrypto3 libssl3 libxml2
 # Create a user with a known UID/GID (10014) within the range 10000-20000 for Choreo
 RUN adduser \
     --disabled-password \

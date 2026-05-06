@@ -1,5 +1,5 @@
 displayName: GCP Microservices Demo Application
-description: Deploy GCP Microservices Demo app developed by Google on Choreo
+description: Deploy GCP Microservices Demo app developed by Google on WSO2 Developer Platform
 componentType: many
 buildPack: many
 repositoryUrl: https://github.com/wso2/choreo-samples/

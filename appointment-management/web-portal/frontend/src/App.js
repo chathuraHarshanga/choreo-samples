@@ -62,7 +62,7 @@ function App() {
     setLoggedIn(false);
     localStorage.removeItem('userDetails');
 
-    // Redirect to Choreo logout with session_hint
+    // Redirect to WSO2 Developer Platform logout with session_hint
     const sessionHint = Cookies.get('session_hint');
     window.location.href = `/auth/logout?session_hint=${sessionHint}`;
 

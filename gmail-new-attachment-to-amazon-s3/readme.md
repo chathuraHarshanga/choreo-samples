@@ -53,7 +53,7 @@ region = "<AMAZON_S3_REGION>"
 
 ### Template Configuration
 1. Obtain the project ID of your Google Cloud project. Replace the `<GOOGLE_CLOUD_PROJECT_ID>` section with this ID.
-2. Obtain the callback URL. Replace the `<LISTENER_CALLBACK_URL>` section with the URL where your listener service is running. (**!!! NOTE:** Locally, you can use [ngrok](https://ngrok.com/docs) to expose your web server to the internet. Example: 'https://7745640c2478.ngrok.io'. In Choreo, you can obtain this callback URL after App deployment.)
+2. Obtain the callback URL. Replace the `<LISTENER_CALLBACK_URL>` section with the URL where your listener service is running. (**!!! NOTE:** Locally, you can use [ngrok](https://ngrok.com/docs) to expose your web server to the internet. Example: 'https://7745640c2478.ngrok.io'. In WSO2 Developer Platform, you can obtain this callback URL after App deployment.)
 3. Obtain the Amazon S3 bucket name to store your files. Replace the `<AMAZON_S3_BUCKET_NAME>` section
 4. Once you obtained all configurations, Create `Config.toml` in root directory.
 5. Replace the necessary fields in the `Config.toml` file with your data.

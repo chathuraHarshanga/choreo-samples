@@ -1,8 +1,8 @@
 # Scheduled Time Logger BYOC
 
-This is a simple program that logs the current time. This program can be deployed in Choreo to be executed periodically by creating a Scheduled Task.
+This is a simple program that logs the current time. This program can be deployed in WSO2 Developer Platform to be executed periodically by creating a Scheduled Task.
 
-### Deploying in Choreo
+### Deploying in WSO2 Developer Platform
 
 - Fork this repository.
 - Create a `Scheduled Task` component.
@@ -10,4 +10,4 @@ This is a simple program that logs the current time. This program can be deploye
 
 ## Testing
 
-Observe the runtime logs in Choreo to see the time being logged periodically.
+Observe the runtime logs in WSO2 Developer Platform to see the time being logged periodically.

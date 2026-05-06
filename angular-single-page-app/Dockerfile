@@ -45,6 +45,7 @@ ENV GROUP_NGINX=10014
 WORKDIR /usr/share/nginx/html
 
 USER root
+RUN apk add --no-cache --upgrade libcrypto3 libssl3 libxml2
 RUN rm -rf /usr/share/nginx/html/*
 
 # Create a user with a known UID/GID (10014) within the range 10000-20000 for Choreo

@@ -6,17 +6,17 @@ This sample demonstrates how to create a proxy for a Department API using a GitH
 
 The Department API provides endpoints to manage department information. By creating a proxy for this API, you can add additional layers of security, rate limiting, and analytics.
 
-The following steps will guide you through the process of creating and deploying the Department API proxy component in Choreo:
+The following steps will guide you through the process of creating and deploying the Department API proxy component in WSO2 Developer Platform:
 
 1. **Create the API Proxy**: Create the API proxy using the provided sample values.
 2. **Configure and Deploy the API Proxy**: Configure the necessary settings and deploy the API proxy to make it available for use.
-4. **Test the API Proxy**: Use the OpenAPI Console in Choreo to test the API proxy and ensure it is functioning correctly.
+4. **Test the API Proxy**: Use the OpenAPI Console in WSO2 Developer Platform to test the API proxy and ensure it is functioning correctly.
 
-## Run the sample in Choreo
+## Run the sample in WSO2 Developer Platform
 
 ### Prerequisites
 
-- A valid Choreo account with available resource quota.
+- A valid WSO2 Developer Platform account with available resource quota.
 
 ### Create the API Proxy
 

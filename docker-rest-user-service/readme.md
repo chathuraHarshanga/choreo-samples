@@ -1,4 +1,4 @@
-# Choreo Sample REST API - User Store
+# WSO2 Developer Platform Sample REST API - User Store
 
 ### Use the following commands to create BYOI component
 
@@ -13,13 +13,13 @@
 - OpenAPI - [openapi.yaml](docs/openapi.yaml)
 
 
-### Use the following configuration when creating this component in Choreo:
+### Use the following configuration when creating this component in WSO2 Developer Platform:
 
 - Build Pack: **Dockerfile**
 - Dockerfile Path: `docker-rest-user-service/Dockerfile`
 - Docker Context Path: `docker-rest-user-service`
 
-The [endpoints.yaml](.choreo/endpoints.yaml) file contains the endpoint configurations that are used by the Choreo to expose the service.
+The [endpoints.yaml](.choreo/endpoints.yaml) file contains the endpoint configurations that are used by the WSO2 Developer Platform to expose the service.
 
 ### Run the service locally
 
@@ -44,11 +44,11 @@ Generated using Go annotations https://github.com/swaggo/swag
 
 Refer [config.go](internal/config/config.go) file for the available configurations.
 
-For more information on how to configure a service in Choreo, refer [Manage Configurations and Secrets](https://wso2.com/choreo/docs/deploy/devops/configs-and-secrets/) documentation.
+For more information on how to configure a service in WSO2 Developer Platform, refer [Manage Configurations and Secrets](https://wso2.com/choreo/docs/deploy/devops/configs-and-secrets/) documentation.
 
 #### Load initial data ( optional )
 
-1. Set environment variable by navigating to Choreo Deploy page `INIT_DATA_PATH=configs/initial_data.json`
+1. Set environment variable by navigating to WSO2 Developer Platform Deploy page `INIT_DATA_PATH=configs/initial_data.json`
 2. Mount the file contents of `configs/initial_data.json` in the path specified in step 1.
 
 See [initial_data.json](configs/initial_data.json) for a sample file.

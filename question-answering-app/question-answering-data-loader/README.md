@@ -1,6 +1,6 @@
-# Choreo Question Answering Bot Example - Data Loader
+# WSO2 Developer Platform Question Answering Bot Example - Data Loader
 
-Welcome to the Choreo Question Answering Bot Example! This application is designed to help you get familiar with the Choreo platform and its features.
+Welcome to the WSO2 Developer Platform Question Answering Bot Example! This application is designed to help you get familiar with the platform and its features.
 
 ## Overview
 
@@ -25,7 +25,7 @@ To use the example:
    ```
    git clone [URL of your forked repository]
    ```
-5. Log into [Choreo](https://console.choreo.dev/)
+5. Log into [WSO2 Developer Platform](https://console.choreo.dev/)
 6. Create a project in choreo and create a new componant of type **Manual Task** by providing the repository path for the `question-answering-data-loader`, with the `Python` buildpack and `3.10.x` as the Python version.
 7. Add the contents of the generate Google Service Account credentials as a configmap and specify the mount path as `/config/gs_credentials.json`.
 8. Configure the following configs as environment variables in the component.

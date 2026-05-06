@@ -28,8 +28,8 @@ parameter.cache_level = "consumer"
 
 ```
 
-## Deploying in Choreo
-To deploy this project in Choreo, follow these steps:
+## Deploying in WSO2 Developer Platform
+To deploy this project in WSO2 Developer Platform, follow these steps:
 
 1. **Fork this repo.**
 2. **Create an Event Handler component.**

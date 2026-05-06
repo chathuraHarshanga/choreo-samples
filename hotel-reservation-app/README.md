@@ -1,6 +1,6 @@
-# Choreo Hotel Reservation App
+# WSO2 Developer Platform Hotel Reservation App
 
-Welcome to the Choreo Hotel Reservation App! This application is designed to help you get familiar with the Choreo platform and its features.
+Welcome to the WSO2 Developer Platform Hotel Reservation App! This application is designed to help you get familiar with the platform and its features.
 
 ## Overview
 
@@ -10,7 +10,7 @@ This application has a front end developed using React.js and an API service imp
 
 The repository is structured into distinct sections:
 
-- **Frontend**: React web frontend with auth handled through Choreo itself.
+- **Frontend**: React web frontend with auth handled through WSO2 Developer Platform itself.
 - **Backend**: Backend microservice that handles the application logic
 
 ### Getting Started
@@ -22,7 +22,7 @@ To engage with these examples:
    ```
    git clone [URL of your forked repository]
    ```
-3. Log into [Choreo](https://console.choreo.dev/)
+3. Log into [WSO2 Developer Platform](https://console.choreo.dev/)
 4. Create a project
 5. Create a service type component with NodeJs preset for backend component
 6. Create a webapp type component with React preset for frontend component

@@ -1,20 +1,20 @@
-# Choreo Reading List Example
+# WSO2 Developer Platform Reading List Example
 
-Welcome to the Choreo Reading List Example! This application is designed to help you get familiar with the Choreo platform and its features.
+Welcome to the WSO2 Developer Platform Reading List Example! This application is designed to help you get familiar with the platform and its features.
 
 ## Overview
 
-This application is a multi-user reading list manager. It allows multiple users to maintain their own reading lists independently. Each user can add, remove, and view books in their personal reading list. It's built using the Choreo platform, showcasing its capabilities in building and deploying multi-user web applications.
+This application is a multi-user reading list manager. It allows multiple users to maintain their own reading lists independently. Each user can add, remove, and view books in their personal reading list. It's built using the platform, showcasing its capabilities in building and deploying multi-user web applications.
 
 ## Directory Overview
 
 The repository is structured into distinct sections:
 
-- **Frontend with managed auth**: React web frontend with auth handled through Choreo itself.
+- **Frontend with managed auth**: React web frontend with auth handled through WSO2 Developer Platform itself.
 - **Frontend**: React web frontend with auth handled through Asgardeo (Similar to using any third party IDP).
 - **Backend** - backend microservice that handles the application logic
 
-> NOTE: Frontend and Frontend with managed auth showcase implementing the same frontend using a third party IDP for auth or using the Choreo built in auth implementation.
+> NOTE: Frontend and Frontend with managed auth showcase implementing the same frontend using a third party IDP for auth or using the WSO2 Developer Platform built in auth implementation.
 
 ### Getting Started
 
@@ -25,7 +25,7 @@ To engage with these examples:
    ```
    git clone [URL of your forked repository]
    ```
-3. Log into [Choreo](https://console.choreo.dev/)
+3. Log into [WSO2 Developer Platform](https://console.choreo.dev/)
 4. Create a mono repo project with React build preset for frontend components and Ballerina for backend component
 
 ### Contribution & Feedback

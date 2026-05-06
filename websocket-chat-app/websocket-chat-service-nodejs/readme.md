@@ -1,6 +1,6 @@
-# Choreo WebSocket Chat Application Example
+# WSO2 Developer Platform WebSocket Chat Application Example
 
-Welcome to the Choreo Nodejs Chat Application Example! This application is designed to help you get familiar with the Choreo platform and its features.
+Welcome to the WSO2 Developer Platform Nodejs Chat Application Example! This application is designed to help you get familiar with the platform and its features.
 
 ## Overview
 
@@ -14,22 +14,22 @@ Note: The following file paths are relative to the path /websocket-chat-app/webs
 | Filepath                      | Description                                                                                   |
 | ------------------------------| --------------------------------------------------------------------------------------------- |
 | server.js                     | WebSocket service written in NodeJS.                                                          |
-| .choreo/component-config.yaml | Choreo-specific configuration that provides information about how Choreo exposes the service. |
+| .choreo/component-config.yaml | WSO2 Developer Platform-specific configuration that provides information about how the service is exposed. |
 
 ## Deploy Application
 
-Please refer to the Choreo documentation under the [Develop a WebSocket API](https://wso2.com/choreo/docs/develop-components/develop-services/develop-a-nodejs-websocket-api/) section to learn how to deploy the application.
+Please refer to the documentation under the [Develop a WebSocket API](https://wso2.com/choreo/docs/develop-components/develop-services/develop-a-nodejs-websocket-api/) section to learn how to deploy the application.
 
-### Use the following configuration when creating this component in Choreo:
+### Use the following configuration when creating this component in WSO2 Developer Platform:
 
 - Build Pack: **NodeJS**
 - Project Directory: `websocket-chat-app/websocket-chat-service-nodejs`
 
-The [component-config.yaml](.choreo/component-config.yaml) file contains the endpoint configurations that are used by the Choreo to expose the service.
+The [component-config.yaml](.choreo/component-config.yaml) file contains the endpoint configurations that are used by the WSO2 Developer Platform to expose the service.
 
-### Test the service in Choreo
+### Test the service in WSO2 Developer Platform
 
-Deploy the created component in Choreo and navigate to the test page. In the WebSocket console, select the channel you want to test and click connect.
+Deploy the created component in WSO2 Developer Platform and navigate to the test page. In the WebSocket console, select the channel you want to test and click connect.
 
 ## Execute the Sample Locally
 

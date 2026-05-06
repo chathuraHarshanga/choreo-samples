@@ -2,11 +2,11 @@
 
 This project demonstrates how to implement a scheduled task in WSO2 Micro Integrator. In this sample scenario, it fetches weather forecast data from the OpenWeatherMap API, processes the response, and logs the processed data.
 
-## Deploying and Test in Choreo
+## Deploying and Test in WSO2 Developer Platform
 
 1. Create a `Scheduled Task` component
     - Fork this repository.
-    - Login to [Choreo](https://wso2.com/choreo/).
+    - Login to [WSO2 Developer Platform](https://console.choreo.dev/login).
     - Navigate to create a `Scheduled Task` component.
     - Provide a name and description for the component.
     - Authorize and select the GitHub details.

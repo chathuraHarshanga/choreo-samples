@@ -1,8 +1,8 @@
-# Choreo Sample GraphQL Service - User Store
+# WSO2 Developer Platform Sample GraphQL Service - User Store
 
 ## Overview
 
-The Go GraphQL User Store is a sample GraphQL API built using Go that provides basic user management functionality. It allows clients to query user information, create new users, and list all users. This README provides instructions for setting up, deploying, and running the service locally or on Choreo.
+The Go GraphQL User Store is a sample GraphQL API built using Go that provides basic user management functionality. It allows clients to query user information, create new users, and list all users. This README provides instructions for setting up, deploying, and running the service locally or on WSO2 Developer Platform.
 
 ## Repository File Structure
 
@@ -12,10 +12,10 @@ Note: All paths are relative to `/go/user-store`.
 | Filepath               | Description                                                                                                                           |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | `main.go`              | Contains the Go code for the GraphQL User Store service.                                                                              |
-| `Dockerfile`           | Docker configuration used by Choreo to build and containerize the application.                                                        |
-| `.choreo/endpoints.yaml` | Choreo-specific configuration that defines how Choreo exposes the service to the internet.                                           |
+| `Dockerfile`           | Docker configuration used by WSO2 Developer Platform to build and containerize the application.                                                        |
+| `.choreo/endpoints.yaml` | WSO2 Developer Platform-specific configuration that defines how the service is exposed to the internet.                                           |
 
-## Deploying the Application on Choreo
+## Deploying the Application on WSO2 Developer Platform
 
 ### Deployment Steps
 

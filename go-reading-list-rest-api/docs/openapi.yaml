@@ -1,6 +1,6 @@
 openapi: 3.0.1
 info:
-  title: Choreo Reading List
+  title: WSO2 Developer Platform Reading List
   description: This is a sample service that manages a list of reading items.
   contact: {}
   version: "1.0"

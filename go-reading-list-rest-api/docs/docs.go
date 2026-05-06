@@ -260,7 +260,7 @@ var SwaggerInfo = &swag.Spec{
 	Host:             "localhost:8080",
 	BasePath:         "/api/v1/reading-list",
 	Schemes:          []string{},
-	Title:            "Choreo Reading List",
+	Title:            "WSO2 Developer Platform Reading List",
 	Description:      "This is a sample service that manages a list of reading items.",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,

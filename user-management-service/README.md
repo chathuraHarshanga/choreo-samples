@@ -8,15 +8,15 @@ Note: The following file paths are relative to the path /user-management-service
 | Filepath               | Description                                                                                                                                                          |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | main.go                | The Go-based Greeter service code.                                                                                                                                   |
-| .choreo/component.yaml | Choreo-specific configuration that provides information about how Choreo exposes the service.                                                                        |
+| .choreo/component.yaml | WSO2 Developer Platform-specific configuration that provides information about how the service is exposed.                                                                        |
 | openapi.yaml           | OpenAPI contract of the greeter service. This is needed to publish our service as a managed API. This openapi.yaml file is referenced by the .choreo/endpoints.yaml. |
 
 ### Prerequisites
-1. Fork the repositoy
+1. Fork the repository
 
 ## Deploy Application
 
-Please refer to the Choreo documentation under the [Develop a REST API](https://wso2.com/choreo/docs/develop-components/develop-services/develop-a-rest-api/#step-1-create-a-service-component-from-a-dockerfile) section to learn how to deploy the application.
+Please refer to the documentation under the [Develop a REST API](https://wso2.com/choreo/docs/develop-components/develop-services/develop-a-service/) section to learn how to deploy the application.
 
 You can select either Docker or Go as buildpacks. Fill as follow according to selected Buildpack.
 

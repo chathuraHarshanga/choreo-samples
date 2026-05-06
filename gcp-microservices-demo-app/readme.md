@@ -6,9 +6,9 @@
 
 **Online Boutique** is a cloud-first microservices demo application. Online Boutique consists of an 11-tier microservices application. The application is a web-based e-commerce app where users can browse items, add them to the cart, and purchase them. This application is developed by Google and you can find the source code in [GoogleCloudPlatform/microservices-demo](https://github.com/GoogleCloudPlatform/microservices-demo).
 
-## Setting up Online Boutique with Choreo 
+## Setting up Online Boutique with WSO2 Developer Platform 
 
-You can deploy **Online Boutique** on [Choreo](https://wso2.com/choreo/) with some additional changes to the original source code. We have made those changes for you and you can find the source code with changes in [wso2/gcp-microservices-demo](https://github.com/wso2/gcp-microservices-demo).
+You can deploy **Online Boutique** on [WSO2 Developer Platform](https://wso2.com/choreo/) with some additional changes to the original source code. We have made those changes for you and you can find the source code with changes in [wso2/gcp-microservices-demo](https://github.com/wso2/gcp-microservices-demo).
 
 The following guide walks you through steps:
 
@@ -19,7 +19,7 @@ The following guide walks you through steps:
 
 # Step 1: Create and Deploy Services
 
-You will create the services that the front-end application needs to consume. Before you proceed, sign into [**Choreo Console**](https://console.choreo.dev/).
+You will create the services that the front-end application needs to consume. Before you proceed, sign into [**WSO2 Developer Platform Console**](https://console.choreo.dev/).
 
 ## Step 1.1: Create and Deploy the Email Service
 
@@ -35,8 +35,8 @@ Let's create your first Service.
     | Description | Send Emails. |
 
 5. Click **Next**.
-6. To allow Choreo to connect to your GitHub account, click **Authorize with GitHub**.
-7. If you have not already connected your GitHub repository to Choreo, enter your GitHub credentials, and select the repository you created by forking https://github.com/wso2/gcp-microservices-demo to install the Choreo GitHub App.
+6. To allow WSO2 Developer Platform to connect to your GitHub account, click **Authorize with GitHub**.
+7. If you have not already connected your GitHub repository to WSO2 Developer Platform, enter your GitHub credentials, and select the repository you created by forking https://github.com/wso2/gcp-microservices-demo to install the WSO2 Developer Platform GitHub App.
 8. In the Connect Repository dialog box, enter the following information:
 
     | Field | Value |
@@ -100,9 +100,9 @@ Let's create your first Service.
 
 ## Step 2.1: Enable Web Application Creation feature
 
-You can skip this step if you are new to Choreo. If not, follow the below steps to **Enable Web Application Creation feature**.
+You can skip this step if you are new to WSO2 Developer Platform. If not, follow the below steps to **Enable Web Application Creation feature**.
 
-1. Navigate to **Choreo Console**.
+1. Navigate to **WSO2 Developer Platform Console**.
 2. Click on the **User Profile**in the top right corner.
 3. Click on the **Feature Preview** in the user menu.
 4. Toggle the **Web Application Creation** Switch.
@@ -111,7 +111,7 @@ You can skip this step if you are new to Choreo. If not, follow the below steps 
 
 ## Step 2.2: Create the front-end application
 
-1. Navigate to **Choreo Console**.
+1. Navigate to **WSO2 Developer Platform Console**.
 2. Navigate to the **Components** section from the left navigation menu.
 3. Click on the **Create** button.
 4. Click on the **Create** button in the **Web Application** Card.
@@ -123,7 +123,7 @@ You can skip this step if you are new to Choreo. If not, follow the below steps 
     | Description | Front-end application |
 
 6. Click on the **Next** button.
-7. To allow Choreo to connect to your **GitHub** account, click **Authorize with GitHub**.
+7. To allow WSO2 Developer Platform to connect to your **GitHub** account, click **Authorize with GitHub**.
 8. In the Connect Repository dialog box, enter the following information:
 
     | Field | Value |

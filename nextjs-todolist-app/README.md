@@ -1,8 +1,8 @@
 # Build A Next.js Application with a separate Backend Service
 
-Choreo is an Internal Developer Platform (IDevP) that allows you to build, deploy, monitor, and manage your cloud-native applications effortlessly.
+WSO2 Developer Platform is an Internal Developer Platform (IDevP) that allows you to build, deploy, monitor, and manage your cloud-native applications effortlessly.
 
-In this quick start guide, you will explore how to expose a service endpoint as a REST API via Choreo and securely consume the API from a Next.js web application.
+In this quick start guide, you will explore how to expose a service endpoint as a REST API via WSO2 Developer Platform and securely consume the API from a Next.js web application.
 
 You will build a simple todo list web application with a sign-in page and functionality to interact with a secure backend REST API. You will use Asgardeo, WSO2's Identity as a Service (IDaaS) solution, to secure user authentication to the web application. The application will allow users to sign in and view the todo list. On signing in, a user can view profile details and view todo lists and view description of the task separately. The application will also allow users to sign out of the application.
 
@@ -17,7 +17,7 @@ This guide walks you through the following steps:
 Before you try out this guide, complete the following:
 
 1. Create a GitHub repository to save the service implementation. For this guide, you can fork [https://github.com/wso2/choreo-samples.git](https://github.com/wso2/choreo-samples.git).
-2. If you are signing in to the Choreo Console for the first time, create an organization as follows:
+2. If you are signing in to the WSO2 Developer Platform Console for the first time, create an organization as follows:
 
     1. Go to [https://console.choreo.dev/](https://console.choreo.dev/), and sign in using your Google, GitHub, or Microsoft account.
     2. Enter a unique organization name. For example, `Stark Industries`.
@@ -28,9 +28,9 @@ Before you try out this guide, complete the following:
 
     !!! info "Enable Asgardeo as the key manager"
 
-         If you created your organization in Choreo before the 21st of February 2023, and you have not already enabled Asgardeo as the key manager, follow these steps to enable Asgardeo as the default key manager:
+         If you created your organization in WSO2 Developer Platform before the 21st of February 2023, and you have not already enabled Asgardeo as the key manager, follow these steps to enable Asgardeo as the default key manager:
 
-         1. In the Choreo Console, go to the top navigation menu and click **Organization**. This takes you to the organization's home page.
+         1. In the WSO2 Developer Platform Console, go to the top navigation menu and click **Organization**. This takes you to the organization's home page.
          2. In the left navigation menu, click **Settings**.
          3. Click the **API Management** tab and then click **Enable Asgardeo Key Manager**.
          4. In the confirmation dialog that opens, click **Yes**.
@@ -54,11 +54,11 @@ Follow the steps below to create the service:
     | **Description** | `Manages Todo lists` |
 
 5. Click **Next**.
-6. To allow Choreo to connect to your GitHub account, click **Authorize with GitHub**.
-7. If you have not already connected your GitHub repository to Choreo, enter your GitHub credentials, and select the repository you created by forking [https://github.com/wso2/choreo-samples](https://github.com/wso2/choreo-samples) to install the [Choreo GitHub App](https://github.com/marketplace/choreo-apps).
+6. To allow WSO2 Developer Platform to connect to your GitHub account, click **Authorize with GitHub**.
+7. If you have not already connected your GitHub repository to WSO2 Developer Platform, enter your GitHub credentials, and select the repository you created by forking [https://github.com/wso2/choreo-samples](https://github.com/wso2/choreo-samples) to install the [WSO2 Developer Platform GitHub App](https://github.com/marketplace/choreo-apps).
 
     !!! info
-         The **Choreo GitHub App** requires the following permissions:<br/><br/>- Read and write access to code and pull requests.<br/><br/>- Read access to issues and metadata.<br/><br/>You can [revoke access](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-authorized-integrations#reviewing-your-authorized-github-apps) if you do not want Choreo to have access to your GitHub account. However, write access is only needed to send pull requests to a user repository. Choreo will not directly push any changes to a repository.
+         The **WSO2 Developer Platform GitHub App** requires the following permissions:<br/><br/>- Read and write access to code and pull requests.<br/><br/>- Read access to issues and metadata.<br/><br/>You can [revoke access](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-authorized-integrations#reviewing-your-authorized-github-apps) if you do not want WSO2 Developer Platform to have access to your GitHub account. However, write access is only needed to send pull requests to a user repository. WSO2 Developer Platform will not directly push any changes to a repository.
 
 
 8. In the **Connect Repository** pane, enter the following information:
@@ -86,7 +86,7 @@ For the REST endpoint of the service to be invokable, you need to deploy it. To 
 
 !!! info
 
-1.  To successfully build your container with Choreo, it is essential to explicitly define a User ID (UID) under the USER instruction in your Dockerfile. For reference, see [sample Dockerfile](https://github.com/wso2/choreo-samples/blob/main/greeting-service-go/Dockerfile).
+1.  To successfully build your container with WSO2 Developer Platform, it is essential to explicitly define a User ID (UID) under the USER instruction in your Dockerfile. For reference, see [sample Dockerfile](https://github.com/wso2/choreo-samples/blob/main/greeting-service-go/Dockerfile).
 
 To ensure that the defined USER instruction is valid, it must conform to the following conditions:
 
@@ -99,13 +99,13 @@ To ensure that the defined USER instruction is valid, it must conform to the fol
 3. Check the deployment progress by observing the console logs on the right of the page.
     You can access the following scans under **Build**. 
 
-    - **The Dockerfile scan**: Choreo performs a scan to check if a non-root user ID is assigned to the Docker container to ensure security. If no non-root user is specified, the build will fail.
+    - **The Dockerfile scan**: WSO2 Developer Platform performs a scan to check if a non-root user ID is assigned to the Docker container to ensure security. If no non-root user is specified, the build will fail.
     - **Container (Trivy) vulnerability scan**: This detects vulnerabilities in the final docker image. 
     -  **Container (Trivy) vulnerability scan**: The details of the vulnerabilities open in a separate pane. If this scan detects critical vulnerabilities, the build will fail.
 
 !!! info
 
-    If you have Choreo environments on a private data plane, you can ignore these vulnerabilities and proceed with the deployment.
+    If you have WSO2 Developer Platform environments on a private data plane, you can ignore these vulnerabilities and proceed with the deployment.
 
 You have successfully created a Service component from a Dockerfile and deployed it.
 
@@ -117,9 +117,9 @@ Let's deploy a next.js front-end application to consume the API. This applicatio
 
 #### Step 2.1.1: Create a web application component
 
-To host the front-end application in Choreo, you must create a web application component. To create a web application component, follow the steps given below.
+To host the front-end application in WSO2 Developer Platform, you must create a web application component. To create a web application component, follow the steps given below.
 
-1. In the Choreo console, select the project of the todo list application that you created in the previous steps, from the project list located on the header.
+1. In the WSO2 Developer Platform console, select the project of the todo list application that you created in the previous steps, from the project list located on the header.
 2. Click **Create** under the **Component Listing** section to create a new component.
 3. On the **Web Application** card, click **Create**.
 4. Enter a unique name and a description for the web application. You can enter the name and description given below:
@@ -130,7 +130,7 @@ To host the front-end application in Choreo, you must create a web application c
     | **Description** | `Frontend application for the todo list service` |
 
 5. Click **Next**.
-6. To allow Choreo to connect to your GitHub account, click **Authorize with GitHub**.
+6. To allow WSO2 Developer Platform to connect to your GitHub account, click **Authorize with GitHub**.
 7. In the **Connect Repository** pane, enter the following information:
 
     | **Field**             | **Description**                               |
@@ -145,11 +145,11 @@ To host the front-end application in Choreo, you must create a web application c
 
 9. Click **Create**. This initializes the service with the implementation from your GitHub repository and takes you to the **Overview** page of the component.
 
-Let's consume the service through the web app. Choreo services are by default secured. To consume a service in Choreo you need an access token. Let's configure the web application to connect to an IdP (For this guide, let's use Asgardeo) to generate an access token for a user.
+Let's consume the service through the web app. WSO2 Developer Platform services are by default secured. To consume a service in WSO2 Developer Platform you need an access token. Let's configure the web application to connect to an IdP (For this guide, let's use Asgardeo) to generate an access token for a user.
 
 #### Step 2.1.2: Deploy the web application component
 
-Once you create the web application component, you can deploy it to the Choreo runtime. To deploy the web application component, follow the steps below:
+Once you create the web application component, you can deploy it to the WSO2 Developer Platform runtime. To deploy the web application component, follow the steps below:
 
 1. In the left menu, click **Build** and select the latest commit and build.
 1. In the left menu, click **Deploy**.
@@ -161,9 +161,9 @@ Although you hosted the web application, you have not configured the web applica
 
 #### Step 2.1.3: Configure Asgardeo (IdP) to integrate with your application
 
-Choreo uses Asgardeo as the default identity provider for Choreo applications.
+WSO2 Developer Platform uses Asgardeo as the default identity provider for WSO2 Developer Platform applications.
 
-1. Access Asgardeo at [https://console.asgardeo.io/](https://console.asgardeo.io/) and sign in with the same credentials with which you signed in to Choreo.
+1. Access Asgardeo at [https://console.asgardeo.io/](https://console.asgardeo.io/) and sign in with the same credentials with which you signed in to WSO2 Developer Platform.
 2. In the Asgardeo Console's left navigation, click **Application**. Click **New Application** then choose **Standard based application**.
 3. Provide a name for the application. For example, `todoListApp`, choose **OpenIDConnect** and Register.
 4. Click the **Protocol** tab and apply the following changes:

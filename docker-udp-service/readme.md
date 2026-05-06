@@ -2,7 +2,7 @@
 
 This sample shows how you can deploy server-client services utilizing UDP for communication. The setup underscores the utilization of lightweight, connectionless data exchange between these components within a networked context.
 
-## Steps to Deploy in Choreo
+## Steps to Deploy in WSO2 Developer Platform
 
 ### Deploy the server
 

@@ -235,7 +235,7 @@ var SwaggerInfo = &swag.Spec{
 	Host:             "localhost:8080",
 	BasePath:         "/api/v1",
 	Schemes:          []string{},
-	Title:            "Choreo User Store",
+	Title:            "WSO2 Developer Platform User Store",
 	Description:      "This is a sample service that manages a list of users",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,

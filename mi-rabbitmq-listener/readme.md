@@ -10,9 +10,9 @@ In this project, we implement a RabbitMQ listener using WSO2 Integration Studio.
 
 - RabbitMQ server access
 
-## Deploy in Choreo
+## Deploy in WSO2 Developer Platform
 
-To deploy this project in Choreo, follow these steps:
+To deploy this project in WSO2 Developer Platform, follow these steps:
 
 1. **Fork this repo.**
 2. **Create an Event Handler component.**
@@ -42,4 +42,4 @@ To test the functionality of your deployed component, follow these steps:
    ```
 2. **Observe the logs:**
 
-   Observe the logs in the Choreo console. You should see the contents of the sales order message logged by the component.
+   Observe the logs in the WSO2 Developer Platform console. You should see the contents of the sales order message logged by the component.

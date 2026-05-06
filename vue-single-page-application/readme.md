@@ -1,4 +1,4 @@
-# Choreo sample web app with vue
+# WSO2 Developer Platform sample web app with vue
 
 ### Initilized with [Vue CLI](https://cli.vuejs.org/guide/creating-a-project.html#vue-create)
 
@@ -6,7 +6,7 @@
 npx @vue/cli create vue-spa
 ```
 
-### Use the following configuration when creating this component in Choreo:
+### Use the following configuration when creating this component in WSO2 Developer Platform:
 
 - Build Pack: **Vue**
 - Build Context Path: `web-apps/vue-spa`

@@ -4,7 +4,7 @@ Welcome to the WebSocket Chat Application! This project is designed to help you 
 
 ## Overview
 
-This application serves as a multi-user chat platform, allowing users to connect, send messages, and manage their chat rooms in real-time. Built using the Choreo platform, it demonstrates the capabilities of WebSocket for building interactive web applications.
+This application serves as a multi-user chat platform, allowing users to connect, send messages, and manage their chat rooms in real-time. Built using the platform, it demonstrates the capabilities of WebSocket for building interactive web applications.
 
 ## Directory Structure
 
@@ -27,7 +27,7 @@ To get started with this application:
 3. **Set Up the Backend**:
    - Navigate to the backend directory.
    - Install dependencies and run the server.
-4. **Log into [Choreo](https://console.choreo.dev/)** to manage your application settings.
+4. **Log into [WSO2 Developer Platform](https://console.choreo.dev/)** to manage your application settings.
 
 ### Contribution & Feedback
 

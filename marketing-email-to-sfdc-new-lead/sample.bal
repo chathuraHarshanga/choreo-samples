@@ -29,7 +29,7 @@ configurable SalesforceListenerConfig sfdcListenerConfig = ?;
 configurable GmailOAuthConfig gmailOAuthConfig = ?;
 
 const string CHANNEL_NAME = "/data/LeadChangeEvent";
-const string GMAIL_SUBJECT = "Choreo is Now Generally Available";
+const string GMAIL_SUBJECT = "WSO2 Developer Platform is Now Generally Available";
 const string CONTENT_TYPE = "text/html";
 
 listener sfdcListener:Listener sfdcEventListener = new ({
@@ -67,7 +67,7 @@ service sfdcListener:RecordService on sfdcEventListener {
                                      Remove the complexity of cloud native infrastructure so your dev and 
                                      ops teams can focus on innovating fast.</p>
                                   <p><a href="https://wso2.com/choreo/" > 
-                                  <b> Click here to know more about Choreo! </b></a> </p>`;
+                                  <b> Click here to know more about WSO2 Developer Platform! </b></a> </p>`;
 
         gmail:Client gmailEndpoint = check new ({
             auth: {

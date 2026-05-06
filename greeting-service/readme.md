@@ -12,8 +12,8 @@ $ curl http://localhost:8090?name=John
 Now service will be invoked and returns record as  
 ```
  {
-     from: "Choreo"
+     from: "WSO2 Developer Platform"
      to: "John"
-     message: "Welcome to Choreo!"
+     message: "Welcome to WSO2 Developer Platform!"
    }
 ```

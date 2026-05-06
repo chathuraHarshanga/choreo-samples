@@ -4,7 +4,7 @@ Let's deploy a React front-end application to consume the Published WebSocket AP
 
 #### Create a web application component
 
-To host the front-end application in Choreo, you must create a web application component. To create a web application component, follow the steps given below.
+To host the front-end application in WSO2 Developer Platform, you must create a web application component. To create a web application component, follow the steps given below.
 
 1. Click **Create** under the **Component Listing** section to create a new component.
 2. Click on the **Web Application** card to create a Web Application.
@@ -16,7 +16,7 @@ To host the front-end application in Choreo, you must create a web application c
     | **Description** | `Frontend application for the websocket service` |
 
 5. Click **Next**.
-6. To allow Choreo to connect to your GitHub account, click **Authorize with GitHub**.
+6. To allow WSO2 Developer Platform to connect to your GitHub account, click **Authorize with GitHub**.
 7. In the **Connect Repository** pane, enter the following information:
 
     | **Field**             | **Description**                               |
@@ -30,7 +30,7 @@ To host the front-end application in Choreo, you must create a web application c
 
 #### Deploy the web application component
 
-Once you create the web application component, you can deploy it to the Choreo runtime. To deploy the web application component, follow the steps below:
+Once you create the web application component, you can deploy it to the WSO2 Developer Platform runtime. To deploy the web application component, follow the steps below:
 
 1. In the left menu, click **Build** and select the latest commit and build.
 1. In the left menu, click **Deploy**.
@@ -47,9 +47,9 @@ Before proceeding to the next step, ensure that you have published your WebSocke
 
 #### Configure Asgardeo (IdP) to integrate with your application
 
-Choreo uses Asgardeo as the default identity provider for Choreo applications.
+WSO2 Developer Platform uses Asgardeo as the default identity provider for WSO2 Developer Platform applications.
 
-1. Access Asgardeo at [https://console.asgardeo.io/](https://console.asgardeo.io/) and sign in with the same credentials with which you signed in to Choreo.
+1. Access Asgardeo at [https://console.asgardeo.io/](https://console.asgardeo.io/) and sign in with the same credentials with which you signed in to WSO2 Developer Platform.
 2. In the Asgardeo Console's left navigation, click **Application** and select your Application.
 4. Click the **Protocol** tab and apply the following changes:
 

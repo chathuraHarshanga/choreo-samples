@@ -14,7 +14,7 @@
 # specific language governing permissions and limitations
 # under the License.
 
-FROM golang:1.22.4-alpine as build-env
+FROM golang:1.24-alpine as build-env
 
 RUN mkdir /app
 WORKDIR /app
@@ -37,6 +37,7 @@ ENV CGO_ENABLED=0 GOOS=linux GOARCH=amd64
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -installsuffix cgo -o /go/bin/app -buildvcs=false
 
 FROM alpine
+RUN apk add --no-cache --upgrade libcrypto3 libssl3 zlib
 COPY --from=build-env /go/bin/app /go/bin/app
 
 USER 10014

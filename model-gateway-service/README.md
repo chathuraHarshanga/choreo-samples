@@ -1,6 +1,6 @@
-# Choreo Model Gateway Example
+# WSO2 Developer Platform Model Gateway Example
 
-Welcome to the Choreo Model Gateway Example! This service is designed to help you get familiar with the Choreo platform and its features.
+Welcome to the WSO2 Developer Platform Model Gateway Example! This service is designed to help you get familiar with the platform and its features.
 
 ## Overview
 
@@ -21,7 +21,7 @@ To use this example:
    ```
    git clone [URL of your forked repository]
    ```
-4. Log into [Choreo](https://console.choreo.dev/)
+4. Log into [WSO2 Developer Platform](https://console.choreo.dev/)
 5. Create a project and create a service type component with the Ballerina preset.
 6. Set the following configurables when prompted at the component deployment.
     ```

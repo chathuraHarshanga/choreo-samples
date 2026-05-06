@@ -5,11 +5,11 @@ This is a simple example of a containerized RabbitMQ listener.
 ## Prerequisites
 - Access to a RabbitMQ server
 
-## Deploying in Choreo
+## Deploying in WSO2 Developer Platform
 
 1. Create an `Event Handler` component
     - Fork this repository
-    - Login to [Choreo](https://wso2.com/choreo/)
+    - Login to [WSO2 Developer Platform](https://console.choreo.dev/login)
     - Navigate to create a `Event Handler` component
     - Provide a name and description for the component
     - Authorize and select the GitHub details
@@ -29,4 +29,4 @@ This is a simple example of a containerized RabbitMQ listener.
 
 
 ## Testing the Component
-Send a message to the "TestQueue" queue using a RabbitMQ producer. The message should be logged in the Choreo console.
+Send a message to the "TestQueue" queue using a RabbitMQ producer. The message should be logged in the WSO2 Developer Platform console.

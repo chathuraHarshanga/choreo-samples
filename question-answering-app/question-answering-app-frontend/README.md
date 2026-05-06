@@ -1,6 +1,6 @@
-# Choreo Question Answering Bot Example - Frontend
+# WSO2 Developer Platform Question Answering Bot Example - Frontend
 
-Welcome to the Choreo Question Answering Bot Example! This application is designed to help you get familiar with the Choreo platform and its features.
+Welcome to the WSO2 Developer Platform Question Answering Bot Example! This application is designed to help you get familiar with the platform and its features.
 
 ## Overview
 
@@ -15,13 +15,13 @@ To use this example:
    ```
    git clone [URL of your forked repository]
    ```
-3. Log into [Choreo](https://console.choreo.dev/)
-4. **Configure Asgardeo as an IDP**: [Configure Asgardeo as an IDP](https://wso2.com/choreo/docs/administer/configure-an-external-idp/configure-asgardeo-as-an-external-idp/) in your Choreo organization.
-5. Deploy and publish the [`question-answering-backend`](../question-answering-backend/) in Choreo. Refer to the [README](../question-answering-backend/README.md) for more information.
-6. Log into [Choreo Developer Portal](https://devportal.choreo.dev/) and create a new application.
+3. Log into [WSO2 Developer Platform](https://console.choreo.dev/)
+4. **Configure Asgardeo as an IDP**: [Configure Asgardeo as an IDP](https://wso2.com/choreo/docs/administer/configure-an-external-idp/configure-asgardeo-as-an-external-idp/) in your WSO2 Developer Platform organization.
+5. Deploy and publish the [`question-answering-backend`](../question-answering-backend/) in WSO2 Developer Platform. Refer to the [README](../question-answering-backend/README.md) for more information.
+6. Log into [WSO2 Developer Platform Developer Portal](https://devportal.choreo.dev/) and create a new application.
 7. In the **Credentials** section select the IDP configured in (4) for production.
 8. [Subscribe to the `question-answering-backend`](https://wso2.com/choreo/docs/consuming-services/consuming-a-sevice/#subscribe-to-an-api) API through the created dev portal application.
-8. In the Choreo console create a new component of type `Web Application` by providing the repositpry path for `question-answering-app-front-end`, with `React` build preset and the following information:
+8. In the WSO2 Developer Platform console create a new component of type `Web Application` by providing the repositpry path for `question-answering-app-front-end`, with `React` build preset and the following information:
    ```
     Build Command: npm install && npm run build
     Build Output: dist
@@ -34,7 +34,7 @@ To use this example:
         redirectUrl: <URL-of-the-deployed-webapp>,
         asgardeoClientId: <asgardeo-client-id (obrained in step(4))>,
         asgardeoBaseUrl: "https://api.asgardeo.io/t/<your-asgardeo-org-name>",
-        choreoApiUrl: <URL-of-the-backend-service-deployed-in-Choreo>,
+        choreoApiUrl: <URL-of-the-backend-service-deployed-in-WSO2 Developer Platform>,
     };
     ```
 

@@ -14,6 +14,6 @@ The sample http endpoint is `http://localhost:9090/publish-temperature` and it a
 }
 ```
 
-You can deploy this program in Choreo as a service component and invoke the endpoint to send temperature data to the Kafka topic. And, make sure to add all the necessary configurations (service.cert, service.key, ca.pem, service uri, and the Kafka topic) to the service component.
+You can deploy this program in WSO2 Developer Platform as a service component and invoke the endpoint to send temperature data to the Kafka topic. And, make sure to add all the necessary configurations (service.cert, service.key, ca.pem, service uri, and the Kafka topic) to the service component.
 
-Please note that you can get all these configuration values after creating a Kafka service on Choreo.
+Please note that you can get all these configuration values after creating a Kafka service on WSO2 Developer Platform.

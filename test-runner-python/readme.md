@@ -2,15 +2,15 @@
 
 ## Use case
 
-When the test runner component is triggered manually, it will run a job to execute automated tests implemented by the developer. Test results and logs can be viewed from the Choreo console.
+When the test runner component is triggered manually, it will run a job to execute automated tests implemented by the developer. Test results and logs can be viewed from the WSO2 Developer Platform console.
 
-## Run the sample in Choreo
+## Run the sample in WSO2 Developer Platform
 
 ### Prerequisites
 
-- A valid Choreo account with available resource quota.
+- A valid WSO2 Developer Platform account with available resource quota.
 
-Let's write some tests in Python and run those tests in Choreo.
+Let's write some tests in Python and run those tests in WSO2 Developer Platform.
 
 ### Create a test runner component using a Go buildpack
 

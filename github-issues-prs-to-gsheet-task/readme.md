@@ -6,10 +6,10 @@ This task allows you to retrieve the list of issues and pull requests for a GitH
 - GitHub PAT for the repsitory you want to retrieve issues and PRs from
 - Google client credentials for the Google Sheet you want to add the issues and PRs to
 
-## Deploying the Task in Choreo
+## Deploying the Task in WSO2 Developer Platform
 1. Create a Manual Task Component
     - Fork this repository
-    - Login to [Choreo](https://wso2.com/choreo/)
+    - Login to [WSO2 Developer Platform](https://console.choreo.dev/login)
     - Navigate to create a `Manual Task` component
     - Provide a name and description for the component
     - Authorize and select the GitHub details
@@ -29,5 +29,5 @@ This task allows you to retrieve the list of issues and pull requests for a GitH
         - `REFRESH_TOKEN` - The refresh token for the Google Sheet
     - Deploy the component
 
-## Running the Task in Choreo
-Once the component is deployed, go to the Choreo console and run the task. Check the Google Sheet to see the issues and PRs added.
+## Running the Task in WSO2 Developer Platform
+Once the component is deployed, go to the WSO2 Developer Platform console and run the task. Check the Google Sheet to see the issues and PRs added.

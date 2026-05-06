@@ -1,14 +1,14 @@
 # Go gRPC Greeter
 
-This example shows how a gRPC service and client can be deployed in Choreo. The example is written in
+This example shows how a gRPC service and client can be deployed in WSO2 Developer Platform. The example is written in
 Go Language. The service is a simple greeter service that returns a greeting message. The client
-is a simple application deployed as a manula trigger on Choreo that calls the greeter service and prints
+is a simple application deployed as a manula trigger on WSO2 Developer Platform that calls the greeter service and prints
 the response.
 
-## Steps to Deploy in Choreo
+## Steps to Deploy in WSO2 Developer Platform
 
 ### Deploy the service
-1. Select a project in Choreo or create a new one
+1. Select a project in WSO2 Developer Platform or create a new one
 2. Create a new service and give it a name
 3. Input following for the server component
     - Public Repository URL: https://github.com/wso2/choreo-samples

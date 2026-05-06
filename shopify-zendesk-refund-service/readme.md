@@ -5,13 +5,13 @@ Streamlining Customer Support: Integrating Shopify with Zendesk
 Shopify Partner Account
 Zendesk Account
 Ballerina (Version 2201.7.1 or higher is preferred)
-Choreo Account
+WSO2 Developer Platform Account
 
 
-## Deploying in Choreo
+## Deploying in WSO2 Developer Platform
 ### Create Service Component:
 - Fork this repository.
-- Login to Choreo: https://console.choreo.dev/.
+- Login to WSO2 Developer Platform: https://console.choreo.dev/.
 - Navigate to create a Service component.
 - Provide a name and description for the component.
 - Authorize and select the GitHub details.
@@ -42,7 +42,7 @@ curl -X POST \
   -d '{"userEmail": "customer@example.com", "orderId": "123456", "reason": "The product is not as described."}' \
   http://<service-endpoint>/refund
 ```
-Replace `<service-endpoint>` with the endpoint URL of your deployed Choreo service.
+Replace `<service-endpoint>` with the endpoint URL of your deployed service.
 Verify the refund:
 
 - Check the Shopify order status to verify that the refund has been processed.

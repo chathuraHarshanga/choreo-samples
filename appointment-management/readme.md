@@ -2,17 +2,17 @@
 
 ## Use Case
 
-This sample demonstrates an appointment booking system designed to streamline the process of scheduling healthcare appointments, featuring a backend for managing appointments and a frontend web application. The backend uses a database connection to connect with a database created in Choreo. 
+This sample demonstrates an appointment booking system designed to streamline the process of scheduling healthcare appointments, featuring a backend for managing appointments and a frontend web application. The backend uses a database connection to connect with a database created in WSO2 Developer Platform. 
 
 
 ## Prerequisites
 
-Database connections can only be created for databases in the marketplace, so you will need to have at least one database in the marketplace. Follow these steps to create a database in Choreo and add it to the marketplace.
+Database connections can only be created for databases in the marketplace, so you will need to have at least one database in the marketplace. Follow these steps to create a database in WSO2 Developer Platform and add it to the marketplace.
 
 <details>
-<summary> Step 01 : Create a database in Choreo</summary>
+<summary> Step 01 : Create a database in WSO2 Developer Platform</summary>
 
-1. Log in to Choreo
+1. Log in to WSO2 Developer Platform
 2. From the organizations list on the header, select your Organization.
 3. . In the left navigation menu, click `Dependencies` and then `Databases`.
 4. Click `Create` and select `MySQL` as the database type.
@@ -27,16 +27,16 @@ Database connections can only be created for databases in the marketplace, so yo
 <details>
 <summary> Step 02 : Add the created databases to Marketplace</summary>
 
-1. To add a Choreo-managed database to the Marketplace, you must register at least one credential for it.
+1. To add a WSO2 Developer Platform-managed database to the Marketplace, you must register at least one credential for it.
 2. Click to expand the database for which you want to register credentials, then click `Add Credentials`.
 3. Follow the instructions to add credentials for the created database, which will be used when establishing the database connection.
 4. Click `+Add to Marketplace` on the created database.
 5. Repeat steps 02-04 for all the databases you created.
 </details>
 
-## Deploy in Choreo
+## Deploy in WSO2 Developer Platform
 
-To deploy this demo use case in Choreo, follow these steps:
+To deploy this demo use case in WSO2 Developer Platform, follow these steps:
 
 ### Step 01: Create the service component for appointment service
 
@@ -96,18 +96,18 @@ To deploy this demo use case in Choreo, follow these steps:
 1. Copy the code snippet from the inline how-to guide of the created connection.
 2. Navigate to deploy page and select `Configure & Deploy` button. This opens the Configure & Deploy pane, where you can specify values for the mount file.
 3. Paste the code snippet copied in step 01 as the `config.js` file content and click `Next`. 
-4. Under Authentication Settings, make sure that you have the Managed authentication with Choreo toggle enabled.
+4. Under Authentication Settings, make sure that you have the Managed authentication with WSO2 Developer Platform toggle enabled.
 5. Deploy the web application
 
-In this use case we are using Choreo managed authentication to authenticate with the backend. In the development environment, you can use the Choreo Built-in Identity Provider, while Asgardeo can be used as the Identity Provider in the production environment.
+In this use case we are using WSO2 Developer Platform managed authentication to authenticate with the backend. In the development environment, you can use the WSO2 Developer Platform Built-in Identity Provider, while Asgardeo can be used as the Identity Provider in the production environment.
 
 <details>
-<summary> Follow below steps to configure Choreo Built-in Identity Provider.</summary>
+<summary> Follow below steps to configure WSO2 Developer Platform Built-in Identity Provider.</summary>
 
 1. Go to your organization
 2. In the left navigation menu, click `Setting` and then click `Application Security`.
-3. Click on the Manage link on "Choreo Built-in Identity Provider" card
-4. Select the file YOUR_FORKED_REPO/web-portal/frontend/userstore.cv and click the `Re-upload` button to update the Choreo Identity Provider.
+3. Click on the Manage link on "WSO2 Developer Platform Built-in Identity Provider" card
+4. Select the file YOUR_FORKED_REPO/web-portal/frontend/userstore.cv and click the `Re-upload` button to update the WSO2 Developer Platform Identity Provider.
 5. Use the uploaded credentials to login and tryout the web application
 
 For more information, see our [documentation](https://wso2.com/choreo/docs/administer/configure-a-user-store-with-built-in-idp/)
@@ -121,7 +121,7 @@ For more information, see our [documentation](https://wso2.com/choreo/docs/admin
 3. Select Asgardeo as the identity provider.
 4. Go to https://console.asgardeo.io/ and create a new user to sign in to the wbe application from `User Management` settings
 5. Create a new standard based application and configure it using the provided OIDC App Configuration information.
-6. Copy Client ID and Client Secret to Choreo console's OIDC App configuration and click on `Add Keys` button. 
+6. Copy Client ID and Client Secret to WSO2 Developer Platform console's OIDC App configuration and click on `Add Keys` button. 
 
 
 </details>

@@ -3,10 +3,10 @@
 ## Introduction
 This is a simple integration scenario developed using Ballerina. This service allows you to retrieve details for a list of employees. It internally calls the employee details endpoint, aggregates the results, and sends back a response.
 
-## Deploy in Choreo
+## Deploy in WSO2 Developer Platform
 1. Create a component
      - Fork this repository
-     - Login to [Choreo](https://wso2.com/choreo/)
+     - Login to [WSO2 Developer Platform](https://console.choreo.dev/login)
      - Navigate to create a `Service` component
      - Provide a name and description for the component
      - Authorize and select the GitHub details
@@ -20,8 +20,8 @@ This is a simple integration scenario developed using Ballerina. This service al
           - `hrEndpoint` - The endpoint URL of the HR service
      - Deploy the component
 
-## Testing the Choreo Component
-Once the component is deployed, go to the Choreo Test console and use the Swagger console to try out the API.
+## Testing the WSO2 Developer Platform Component
+Once the component is deployed, go to the WSO2 Developer Platform Test console and use the Swagger console to try out the API.
 
 Or 
 

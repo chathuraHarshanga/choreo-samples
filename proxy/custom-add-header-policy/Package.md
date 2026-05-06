@@ -2,7 +2,7 @@
 
 ## Overview
 
-This package provides a template as a starting point for authoring Choreo mediation policies. To use this template, run the following command.
+This package provides a template as a starting point for authoring WSO2 Developer Platform mediation policies. To use this template, run the following command.
 ```
 $ bal new <policy-name> -t choreo/mediation.template:<package-version>
 ```

@@ -1,6 +1,6 @@
 openapi: 3.0.3
 info:
-  title: Choreo Samples - Question Answering - Python REST API
+  title: WSO2 Developer Platform Samples - Question Answering - Python REST API
   description: >-
     This the API specification for a question answering service using LLMs written in Python.
   license:
@@ -37,4 +37,4 @@ components:
       properties:
         question:
           type: string
-          example: "What is Choreo?"
+          example: "What is WSO2 Developer Platform?"

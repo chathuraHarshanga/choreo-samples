@@ -154,7 +154,7 @@ We need to enable the app script trigger if we want to listen to internal change
     ```
    We’re using the UrlFetchApp class to communicate with other applications on the internet.
 
-5. Replace the <BASE_URL> section with the base URL where your listener service is running. (**!!! NOTE:** Locally, you can use [ngrok](https://ngrok.com/docs) to expose your web server to the internet. Example: 'https://7745640c2478.ngrok.io'. In Choreo, you can obtain this callback URL after App deployment.)
+5. Replace the <BASE_URL> section with the base URL where your listener service is running. (**!!! NOTE:** Locally, you can use [ngrok](https://ngrok.com/docs) to expose your web server to the internet. Example: 'https://7745640c2478.ngrok.io'. In WSO2 Developer Platform, you can obtain this callback URL after App deployment.)
 6. Navigate to the `Triggers` section in the left menu of the editor.
 7. Click `Add Trigger` button.
 8. Then make sure you 'Choose which function to run' is `atChange` then 'Select event source' is `From spreadsheet` then 'Select event type' is  `On change` then click Save!.

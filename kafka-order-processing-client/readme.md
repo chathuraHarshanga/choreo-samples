@@ -19,7 +19,7 @@ kafkaEndpoint = "KAFKA_SERVER_URL"
 kafkaUsername = "KAFKA_USERNAME"
 kafkaPass = "KAFKA_PASSWORD"
 ```
-> If you are using Choreo, you can provide values for configuarables via the Choreo Console.
+> If you are using WSO2 Developer Platform, you can provide values for configuarables via the WSO2 Developer Platform Console.
 
 ## Kafka Consumer
 
@@ -38,10 +38,10 @@ The Kafka producer in this program reads order objects from the "order" topic an
 }
 ```
 
-## Deploying in Choreo
+## Deploying in WSO2 Developer Platform
 1. Creating a Event Handler Component
     - Fork this repository
-    - Login to [Choreo](https://wso2.com/choreo/)
+    - Login to [WSO2 Developer Platform](https://console.choreo.dev/login)
     - Navigate to create a `Event Handler` component
     - Provide a name and description for the component
     - Authorize and select the GitHub details

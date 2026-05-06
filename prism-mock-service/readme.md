@@ -4,11 +4,11 @@
 
 When you have an open API specification and you want to test your API without connecting to the actual service, you can use Prism Mock services component. This sample demonstrates how to create a mock service using existing Open API specification.
 
-## Run the sample in Choreo
+## Run the sample in WSO2 Developer Platform
 
 ### Prerequisites
 
-- A valid Choreo account with available resource quota.
+- A valid WSO2 Developer Platform account with available resource quota.
 
 ### Create a Prism Mock Service component
 
@@ -43,4 +43,4 @@ When you have an open API specification and you want to test your API without co
 2. Use the swagger UI to test the mock service.
 
 > **Note:**
-> You can consume the prism mock service as a regular Choreo service from the internal marketplace or from the Developer Portal.
+> You can consume the prism mock service as a regular WSO2 Developer Platform service from the internal marketplace or from the Developer Portal.

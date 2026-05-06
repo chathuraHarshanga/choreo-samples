@@ -2,9 +2,9 @@
 
 This is a simple Flask application developed to demonstrate a restaurant reservation system. The application is developed using Python 3.9.7 and Flask 2.0.2.
 
-## Deploying the application in Choreo
+## Deploying the application in WSO2 Developer Platform
 1. Fork this repository.
-2. Create a `Service` component in Choreo.
+2. Create a `Service` component in WSO2 Developer Platform.
 3. Deploy the component.
 
 ## Testing the application

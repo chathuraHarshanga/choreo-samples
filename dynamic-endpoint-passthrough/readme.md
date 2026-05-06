@@ -3,10 +3,10 @@
 Make a passthrough call to another endpoint url that needs to be specified dynamically
 
 
-## Deploy in Choreo
+## Deploy in WSO2 Developer Platform
 1. Create the greeting service component
      - Fork this repository
-     - Login to [Choreo](https://wso2.com/choreo/)
+     - Login to [WSO2 Developer Platform](https://console.choreo.dev/login)
      - Select an existing `Project` or create a new one
      - Navigate to create a `Service` component
      - Provide a name and description for the component
@@ -31,8 +31,8 @@ Make a passthrough call to another endpoint url that needs to be specified dynam
 4. Build and deploy the dynamic endpoint passthrough service component
      - In the Configuration section add the Endpoint URL that was copied in step 2 to as the value for `invoke_url`
 
-## Testing the Choreo Component
-Once the dynamic endpoint passthrough service component is deployed, go to the Choreo Test console and use the Swagger console to try out the API.
+## Testing the WSO2 Developer Platform Component
+Once the dynamic endpoint passthrough service component is deployed, go to the WSO2 Developer Platform Test console and use the Swagger console to try out the API.
 
 
 ## Run and Test Locally

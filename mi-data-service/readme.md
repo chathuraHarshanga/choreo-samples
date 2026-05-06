@@ -1,6 +1,6 @@
 # Data service integration
 
-The "Data Service Integration" sample demonstrates how to create an integration that integrates with a relational database management system (RDBMS) and exposes employee information stored in the database as a REST API. To use this sample with Choreo, follow these steps:
+The "Data Service Integration" sample demonstrates how to create an integration that integrates with a relational database management system (RDBMS) and exposes employee information stored in the database as a REST API. To use this sample with WSO2 Developer Platform, follow these steps:
 
 ## Setting up the database
 - Start a MySQL instance and create a database (for example, `misampledb`).
@@ -8,7 +8,7 @@ The "Data Service Integration" sample demonstrates how to create an integration 
 - Identify the publicly accessible connection URL and credentials for the database.
 
 ## Create a MI Integration
-- Login to [Choreo console](https://console.choreo.dev/)
+- Login to [WSO2 Developer Platform console](https://console.choreo.dev/)
 - Create a `Service` component.
 - Provide a name and description for the component.
 - Authorize and select the GitHub details
@@ -31,4 +31,4 @@ The "Data Service Integration" sample demonstrates how to create an integration 
   - `DB_PASS` for `Key` and db password for `Value`
   - Click on `Finish` to apply the changes
 
-Once done go to the Choreo Test console and use the Swagger console to try out the API.
+Once done go to the WSO2 Developer Platform Test console and use the Swagger console to try out the API.

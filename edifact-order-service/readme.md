@@ -1,4 +1,4 @@
-# Using EDIFACT with Choreo
+# Using EDIFACT with WSO2 Developer Platform
 
 ## Introduction
 Electronic Data Interchange (EDI) revolutionizes business communication by enabling the standardized exchange of structured data between enterprises. EDIFACT (Electronic Data Interchange for Administration, Commerce, and Transport) stands out as a widely adopted international EDI standard developed by the United Nations. In B2B integration scenarios, companies often use different data formats, such as EDIFACT, JSON, XML, etc. This necessitates a seamless bridge to facilitate smooth communication between trading partners.
@@ -40,4 +40,4 @@ This directory contains Ballerina implementation of the `Integration Service` fo
    bal run
    ```
 ## Deploy and Test
-You can use [Choreo](https://console.choreo.dev/) to deploy, test and manage this integration service. 
+You can use [WSO2 Developer Platform](https://console.choreo.dev/) to deploy, test and manage this integration service. 

@@ -38,7 +38,7 @@ import (
 
 // This is an example of a REST API service that manages a list of users
 //
-//	@title			Choreo User Store
+//	@title			WSO2 Developer Platform User Store
 //	@version		1.0
 //	@description	This is a sample service that manages a list of users
 //	@host			localhost:8080
@@ -64,7 +64,7 @@ func main() {
 	routes.Initialize(app)
 
 	go func() {
-		logrus.WithFields(logrus.Fields{"port": cfg.Port}).Info("Choreo User Store service is starting...")
+		logrus.WithFields(logrus.Fields{"port": cfg.Port}).Info("WSO2 Developer Platform User Store service is starting...")
 
 		if err := app.Listen(fmt.Sprintf(":%d", cfg.Port)); err != nil {
 			log.Fatalf("failed to start server: %v", err)

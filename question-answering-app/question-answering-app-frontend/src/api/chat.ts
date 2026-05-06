@@ -45,7 +45,7 @@ export async function getAnswer(accessToken: string, question: string) {
 export async function getChatbotGreeting() {
   return new Promise(function (resolve, reject) {
     setTimeout(function () {
-      resolve("Hi there! What is your question about Choreo?");
+      resolve("Hi there! What is your question about WSO2 Developer Platform?");
     }, 500);
   });
 }

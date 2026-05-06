@@ -1,10 +1,10 @@
-# Choreo Question Answering Bot Example
+# WSO2 Developer Platform Question Answering Bot Example
 
-Welcome to the Choreo Question Answering Bot Example! This application is designed to help you get familiar with the Choreo platform and its features.
+Welcome to the WSO2 Developer Platform Question Answering Bot Example! This application is designed to help you get familiar with the platform and its features.
 
 ## Overview
 
-This application is a chat bot for answering questions based on product documentation using AI. It allows uploading the docuemnt contents along with their embeddings to a vector database and asking related question through the chat UI. This sample uses a subset of Choreo documentation. It's built using the Choreo platform, showcasing its capabilities in building and deploying multi-user web applications.
+This application is a chat bot for answering questions based on product documentation using AI. It allows uploading the docuemnt contents along with their embeddings to a vector database and asking related question through the chat UI. This sample uses a subset of WSO2 Developer Platform documentation. It's built using the platform, showcasing its capabilities in building and deploying multi-user web applications.
 
 ## Directory Overview
 
@@ -23,7 +23,7 @@ To engage with these examples:
    ```
    git clone [URL of your forked repository]
    ```
-3. Log into [Choreo](https://console.choreo.dev/)
+3. Log into [WSO2 Developer Platform](https://console.choreo.dev/)
 4. Create a mono repo project and create the components based on the READMEs in the respective directories.
     - [Data Loader](./question-answering-data-loader/README.md)
     - [Backend Service](./question-answering-backend/README.md)

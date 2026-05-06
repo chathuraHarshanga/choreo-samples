@@ -1,14 +1,14 @@
 # Pet Management Application User Guide
 
-The Pet Management Application is a B2C (Business-to-Consumer) application that allows users to easily register and manage their pets. Users can enter vital information such as their pets' basic information and vaccination records into the app. They can then set up email alerts for their pets' upcoming vaccination dates. The solution is based on [Ballerina](https://ballerina.io/), [Choreo](https://wso2.com/choreo/) and [Asgardeo](https://wso2.com/asgardeo/). 
+The Pet Management Application is a B2C (Business-to-Consumer) application that allows users to easily register and manage their pets. Users can enter vital information such as their pets' basic information and vaccination records into the app. They can then set up email alerts for their pets' upcoming vaccination dates. The solution is based on [Ballerina](https://ballerina.io/), [WSO2 Developer Platform](https://wso2.com/choreo/) and [Asgardeo](https://wso2.com/asgardeo/). 
 
 - [Ballerina](https://ballerina.io/) is an open-source language for cloud-native app development. It simplifies building microservices-based applications with modern syntax, built-in network support, service discovery, distributed transactions, and security features.
 
-- [Choreo](https://wso2.com/choreo/), a SaaS application development suite, streamlines integration creation and management in cloud-native environments. It empowers developers with tools to connect, orchestrate, and secure applications and services, expediting digital experience development.
+- [WSO2 Developer Platform](https://wso2.com/choreo/), a SaaS application development suite, streamlines integration creation and management in cloud-native environments. It empowers developers with tools to connect, orchestrate, and secure applications and services, expediting digital experience development.
 
 - [Asgardeo](https://wso2.com/asgardeo/), a Customer IAM (CIAM) solution by WSO2, offers extensive features for managing user identities, access privileges, and security in digital ecosystems. It caters to both B2C and B2B applications.
 
-In this solution, the pet management service is developed using Ballerina and deployed within Choreo. It's then made available as an API for use by various applications. The Pet management web application, which is built using React JS, is also hosted within Choreo using its hosting capabilities Asgardeo handles user authentication and leverages its Customer Identity and Access Management (CIAM) capabilities to enrich the overall user experience.
+In this solution, the pet management service is developed using Ballerina and deployed within WSO2 Developer Platform. It's then made available as an API for use by various applications. The Pet management web application, which is built using React JS, is also hosted within WSO2 Developer Platform using its hosting capabilities Asgardeo handles user authentication and leverages its Customer Identity and Access Management (CIAM) capabilities to enrich the overall user experience.
 
 ![Alt text](readme-resources/pet-care-solution.png?raw=true "Pet Care Solution")
 
@@ -16,14 +16,14 @@ This guide walks you through the following steps:
 
 1. Develop, deploy, and test a service component.
 2. Publish the service endpoint as a REST API for your web application to consume.
-3. Expose the REST API via Choreo API management.
+3. Expose the REST API via WSO2 Developer Platform API management.
 4. Securely consume the published REST API via your web application.
 5. Deploy your web application and enhance the customer experience with Asgardeo's CIAM features. 
 ---
 
 # Step 1: Create and publish a Service
 
-In this step, you will play the role of the API developer. You will create and publish the Service that the web application needs to consume. Before you proceed, sign in to [**Choreo Console**](https://console.choreo.dev/).
+In this step, you will play the role of the API developer. You will create and publish the Service that the web application needs to consume. Before you proceed, sign in to [**WSO2 Developer Platform Console**](https://console.choreo.dev/).
 
 ## Step 1.1: Create the Service
 
@@ -39,8 +39,8 @@ Let's create your first Service.
     | Description | Manage your pets |
 
 5. Click **Next**.
-6. To allow Choreo to connect to your GitHub account, click **Authorize with GitHub**.
-7. If you have not already connected your GitHub repository to Choreo, enter your GitHub credentials, and select the repository you created by forking https://github.com/wso2/choreo-examples to install the Choreo GitHub App.
+6. To allow WSO2 Developer Platform to connect to your GitHub account, click **Authorize with GitHub**.
+7. If you have not already connected your GitHub repository to WSO2 Developer Platform, enter your GitHub credentials, and select the repository you created by forking https://github.com/wso2/choreo-examples to install the WSO2 Developer Platform GitHub App.
 8. In the Connect Repository dialog box, enter the following information:
 
     | Field | Value |
@@ -48,7 +48,7 @@ Let's create your first Service.
     | GitHub Account | Your account |
     | GitHub Repository | choreo-examples |
     | Branch | main |
-    | Build Preset | Click **Ballerina** because you are creating the REST API from a Ballerina project and Choreo needs to run a Ballerina build to build it. |
+    | Build Preset | Click **Ballerina** because you are creating the REST API from a Ballerina project and WSO2 Developer Platform needs to run a Ballerina build to build it. |
     | Path | /b2c-apps/pet-care-app/pet-management-service |
 
 9. Click **Create** to initialize a Service with the implementation from your GitHub repository.
@@ -58,7 +58,7 @@ The Service opens on a separate page where you can see its overview.
 ## Step 1.2: Deploy the Service
 
 For the Service to be invokable, you need to deploy it. To deploy the Service, follow the steps given below:
-1. Navigate to the **Choreo Console**. You will be viewing an overview of the Pet Management Service.
+1. Navigate to the **WSO2 Developer Platform Console**. You will be viewing an overview of the Pet Management Service.
 2. In the left pane, click **Deploy**, and then click **Configure & Deploy**.
 3. In the **Configure & Deploy** pane, you will be asking to enter values for the **Defaultable Configurables**.
     - You can setup a **Mysql database** to store the service's data. This is **optional**, and if you do not specify database values, the service will save the data in memory. 
@@ -105,7 +105,7 @@ For the Service to be invokable, you need to deploy it. To deploy the Service, f
           );
           ```
         
-      - Make sure your database is publicly accessible and that your database service allows Choreo IP addresses. Please refer the guide [Connect with Protected Third Party Applications](https://wso2.com/choreo/docs/reference/connect-with-protected-third-party-applications/#connect-with-protected-third-party-applications) for more information.
+      - Make sure your database is publicly accessible and that your database service allows WSO2 Developer Platform IP addresses. Please refer the guide [Connect with Protected Third Party Applications](https://wso2.com/choreo/docs/reference/connect-with-protected-third-party-applications/#connect-with-protected-third-party-applications) for more information.
 
       - Configure the following **Defaultable Configurables** after setting up the database.   
 
@@ -161,7 +161,7 @@ If you are not connecting the service to a MySQL database and storing the servic
 
 ## Step 1.5: Test the Service
 
-Let's test the Pet Management Service via Choreo's Open API Console by following the steps given below:
+Let's test the Pet Management Service via WSO2 Developer Platform's Open API Console by following the steps given below:
 1. Navigate to the **Test** section in the component and click **OpenAPI Console**. This will open up the Open API definition of the service.
 2. Expand the **POST** method and click **Try it out**.
 3. Update the request body as below:
@@ -199,9 +199,9 @@ Now that your Service is tested, let's publish it and make it available for appl
 
 ## Step 2.1: Enable Asgardeo Key Manager
 
-You can skip this step if you are new to Choreo. If not, follow the below steps to **Enable Asgardeo Key Manager**.
+You can skip this step if you are new to WSO2 Developer Platform. If not, follow the below steps to **Enable Asgardeo Key Manager**.
 
-1. Go to the **Choreo Console**, click **Settings**, and then click **API Management**.
+1. Go to the **WSO2 Developer Platform Console**, click **Settings**, and then click **API Management**.
 2. On the API Management page, click **Enable Asgardeo Key Manager**.
 
 ![Alt text](readme-resources/enable-km.png?raw=true "Enable Asgardeo Key Manager")
@@ -239,9 +239,9 @@ Now you have generated keys for the application.
 
 ## Step 3.1: Enable Web Application Creation feature
 
-You can skip this step if you are new to Choreo. If not, follow the below steps to **Enable Web Application Creation feature**.
+You can skip this step if you are new to WSO2 Developer Platform. If not, follow the below steps to **Enable Web Application Creation feature**.
 
-1. Navigate to **Choreo Console**.
+1. Navigate to **WSO2 Developer Platform Console**.
 2. Click on the **User Profile** in the top right corner.
 3. Click on the **Feature Preview** in the user menu.
 4. Toggle the **Web Application Creation** Switch.
@@ -250,9 +250,9 @@ You can skip this step if you are new to Choreo. If not, follow the below steps 
 
 ## Step 3.2: Create a web application component
 
-In this step, you are going to create the pet management front-end application in Choreo.
+In this step, you are going to create the pet management front-end application in WSO2 Developer Platform.
 
-1. Navigate to **Choreo Console**.
+1. Navigate to **WSO2 Developer Platform Console**.
 2. Navigate to the **Components** section from the left navigation menu.
 3. Click on the **Create** button.
 4. Click on the **Create** button in the **Web Application** Card.
@@ -264,7 +264,7 @@ In this step, you are going to create the pet management front-end application i
     | Description | Web application for managing your pets. |
 
 6. Click on the **Next** button.
-7. To allow Choreo to connect to your **GitHub** account, click **Authorize with GitHub**.
+7. To allow WSO2 Developer Platform to connect to your **GitHub** account, click **Authorize with GitHub**.
 8. In the Connect Repository dialog box, enter the following information:
 
     | Field | Value |
@@ -345,8 +345,8 @@ To configure the front-end application, follow the steps given below.
 
 ## Step 4.1: Configure Asgardeo to integrate with your web application
 
-1. Access **Asgardeo** at https://console.asgardeo.io/ and log in with the same credentials with which you logged in to Choreo. 
-2. Verify that you are logged into the **organization** you used for Choreo. Otherwise, select the appropriate **organization** by clicking on the organization menu at the top.
+1. Access **Asgardeo** at https://console.asgardeo.io/ and log in with the same credentials with which you logged in to WSO2 Developer Platform. 
+2. Verify that you are logged into the **organization** you used for WSO2 Developer Platform. Otherwise, select the appropriate **organization** by clicking on the organization menu at the top.
 3. Click **Applications** in the left navigation menu.
 4. You can see the application you created before from the devportal(`Pet Management App`).
 5. Click the `Pet Management App`.

@@ -49,15 +49,15 @@ The System Admin of each of the Business can select a suitable login option for 
 &nbsp;<br>
 ## Solution
 
-The solution is based on [Ballerina](https://ballerina.io/), [Choreo](https://wso2.com/choreo/) and [Asgardeo](https://wso2.com/asgardeo/). 
+The solution is based on [Ballerina](https://ballerina.io/), [WSO2 Developer Platform](https://wso2.com/choreo/) and [Asgardeo](https://wso2.com/asgardeo/). 
 
 - [Ballerina](https://ballerina.io/) is an open-source language for cloud-native app development. It simplifies building microservices-based applications with modern syntax, built-in network support, service discovery, distributed transactions, and security features.
 
-- [Choreo](https://wso2.com/choreo/), a SaaS application development suite, streamlines integration creation and management in cloud-native environments. It empowers developers with tools to connect, orchestrate, and secure applications and services, expediting digital experience development.
+- [WSO2 Developer Platform](https://wso2.com/choreo/), a SaaS application development suite, streamlines integration creation and management in cloud-native environments. It empowers developers with tools to connect, orchestrate, and secure applications and services, expediting digital experience development.
 
 - [Asgardeo](https://wso2.com/asgardeo/), a Customer IAM (CIAM) solution by WSO2, offers extensive features for managing user identities, access privileges, and security in digital ecosystems. It caters to both B2C and B2B applications.
 
-In this solution, there are three services written in Ballerina: the email service, channel service, and pet management service. The pet management service and channel service connect with the email service to send emails to users. These services are deployed in Choreo and exposed as APIs for consumption by applications. The email service functions internally. The Pet management web application, written in React JS, is hosted in Choreo using its hosting capabilities. Asgardeo authenticates users and utilizes its CIAM capabilities to enhance the customer experience. Asgardeo's B2B features are employed to develop this B2B application.
+In this solution, there are three services written in Ballerina: the email service, channel service, and pet management service. The pet management service and channel service connect with the email service to send emails to users. These services are deployed in WSO2 Developer Platform and exposed as APIs for consumption by applications. The email service functions internally. The Pet management web application, written in React JS, is hosted in WSO2 Developer Platform using its hosting capabilities. Asgardeo authenticates users and utilizes its CIAM capabilities to enhance the customer experience. Asgardeo's B2B features are employed to develop this B2B application.
 
 ![Alt text](readme-resources/solution-architecture.jpg?raw=true "Organizational Hierarchy of B2B Business")
 
@@ -65,9 +65,9 @@ This guide provides step-by-step instructions for:
 
 1. Developing, deploying, and testing service components.
 2. Publishing the service endpoints as a REST API for consumption by your web application.
-3. Exposing the REST APIs through Choreo API management.
+3. Exposing the REST APIs through WSO2 Developer Platform API management.
 4. Securely accessing the published REST APIs from your web application.
-5. Deploying your web application in Choreo.
+5. Deploying your web application in WSO2 Developer Platform.
 6. Configuring Asgardeo's CIAM features and utilizing its B2B capabilities.
 7. Consuming the web application.
 
@@ -76,7 +76,7 @@ This guide provides step-by-step instructions for:
 
 # Step 1: Create and publish Services
 
-In this step, you will play the role of the API developer. You will create and publish the Services that the web application needs to consume. Before you proceed, sign in to [**Choreo Console**](https://console.choreo.dev/).
+In this step, you will play the role of the API developer. You will create and publish the Services that the web application needs to consume. Before you proceed, sign in to [**WSO2 Developer Platform Console**](https://console.choreo.dev/).
 
 ## Step 1.1: Create the Email Service
 
@@ -92,8 +92,8 @@ Let's create your first Service.
     | Description | Send Emails |
 
 5. Click **Next**.
-6. To allow Choreo to connect to your GitHub account, click **Authorize with GitHub**.
-7. If you have not already connected your GitHub repository to Choreo, enter your GitHub credentials, and select the repository you created by forking https://github.com/wso2/choreo-examples to install the Choreo GitHub App.
+6. To allow WSO2 Developer Platform to connect to your GitHub account, click **Authorize with GitHub**.
+7. If you have not already connected your GitHub repository to WSO2 Developer Platform, enter your GitHub credentials, and select the repository you created by forking https://github.com/wso2/choreo-examples to install the WSO2 Developer Platform GitHub App.
 8. In the Connect Repository dialog box, enter the following information:
 
     | Field | Value |
@@ -101,7 +101,7 @@ Let's create your first Service.
     | GitHub Account | Your account |
     | GitHub Repository | choreo-examples |
     | Branch | main |
-    | Build Preset | Click **Ballerina** because you are creating the REST API from a Ballerina project and Choreo needs to run a Ballerina build to build it. |
+    | Build Preset | Click **Ballerina** because you are creating the REST API from a Ballerina project and WSO2 Developer Platform needs to run a Ballerina build to build it. |
     | Project Path | /b2b-apps/pet-care-app/email-service |
 
 9. Click **Create** to initialize a Service with the implementation from your GitHub repository.
@@ -111,7 +111,7 @@ The Service opens on a separate page where you can see its overview.
 ## Step 1.2: Deploy the Email Service
 
 For the Service to be invokable, you need to deploy it. To deploy the Service, follow the steps given below:
-1. Navigate to the **Choreo Console**. You will be viewing an overview of the Email Service.
+1. Navigate to the **WSO2 Developer Platform Console**. You will be viewing an overview of the Email Service.
 2. In the left pane, click **Deploy**, and then click **Configure & Deploy**.
 3. In the **Configure & Deploy** pane, you will be asking to enter values for the **Defaultable Configurables**.
     - You can configure SMTP configurations. This is **optional**, and if you specify SMTP configurations here, it will use to send emails to the users. 
@@ -150,8 +150,8 @@ For the Service to be invokable, you need to deploy it. To deploy the Service, f
     | Description | Manage Channel Services |
 
 4. Click **Next**.
-5. To allow Choreo to connect to your GitHub account, click **Authorize with GitHub**.
-6. If you have not already connected your GitHub repository to Choreo, enter your GitHub credentials, and select the repository you created by forking https://github.com/wso2/choreo-examples to install the Choreo GitHub App.
+5. To allow WSO2 Developer Platform to connect to your GitHub account, click **Authorize with GitHub**.
+6. If you have not already connected your GitHub repository to WSO2 Developer Platform, enter your GitHub credentials, and select the repository you created by forking https://github.com/wso2/choreo-examples to install the WSO2 Developer Platform GitHub App.
 7. In the Connect Repository dialog box, enter the following information:
 
     | Field | Value |
@@ -159,7 +159,7 @@ For the Service to be invokable, you need to deploy it. To deploy the Service, f
     | GitHub Account | Your account |
     | GitHub Repository | choreo-examples |
     | Branch | main |
-    | Build Preset | Click **Ballerina** because you are creating the REST API from a Ballerina project and Choreo needs to run a Ballerina build to build it. |
+    | Build Preset | Click **Ballerina** because you are creating the REST API from a Ballerina project and WSO2 Developer Platform needs to run a Ballerina build to build it. |
     | Project Path | /b2b-apps/pet-care-app/channel-service |
 
 8. Click **Create** to initialize a Service with the implementation from your GitHub repository.
@@ -168,7 +168,7 @@ The Service opens on a separate page where you can see its overview.
 
 ## Step 1.4: Deploy the Channel Service
 
-1. Navigate to the **Choreo Console**. You will be viewing an overview of the Channel Service.
+1. Navigate to the **WSO2 Developer Platform Console**. You will be viewing an overview of the Channel Service.
 2. In the left pane, click **Deploy**, and then click **Configure & Deploy**.
 3. In the **Configure & Deploy** pane, you will be asking to enter values for the **Defaultable Configurables**.
     - You can setup a **Mysql database** to store the service's data. This is **optional**, and if you do not specify database values, the service will save the data in memory. 
@@ -242,7 +242,7 @@ The Service opens on a separate page where you can see its overview.
                 PRIMARY KEY (orgName)
             );
           ```
-      - Make sure your database is publicly accessible and that your database service allows Choreo IP addresses. Please refer the guide [Connect with Protected Third Party Applications](https://wso2.com/choreo/docs/reference/connect-with-protected-third-party-applications/#connect-with-protected-third-party-applications) for more information.
+      - Make sure your database is publicly accessible and that your database service allows WSO2 Developer Platform IP addresses. Please refer the guide [Connect with Protected Third Party Applications](https://wso2.com/choreo/docs/reference/connect-with-protected-third-party-applications/#connect-with-protected-third-party-applications) for more information.
 
       - Configure the following **Defaultable Configurables** after setting up the database.   
 
@@ -283,8 +283,8 @@ The Service opens on a separate page where you can see its overview.
     | Description | Manage Pets |
 
 4. Click **Next**.
-5. To allow Choreo to connect to your GitHub account, click **Authorize with GitHub**.
-6. If you have not already connected your GitHub repository to Choreo, enter your GitHub credentials, and select the repository you created by forking https://github.com/wso2/choreo-examples to install the Choreo GitHub App.
+5. To allow WSO2 Developer Platform to connect to your GitHub account, click **Authorize with GitHub**.
+6. If you have not already connected your GitHub repository to WSO2 Developer Platform, enter your GitHub credentials, and select the repository you created by forking https://github.com/wso2/choreo-examples to install the WSO2 Developer Platform GitHub App.
 7. In the Connect Repository dialog box, enter the following information:
 
     | Field | Value |
@@ -292,7 +292,7 @@ The Service opens on a separate page where you can see its overview.
     | GitHub Account | Your account |
     | GitHub Repository | choreo-examples |
     | Branch | main |
-    | Build Preset | Click **Ballerina** because you are creating the REST API from a Ballerina project and Choreo needs to run a Ballerina build to build it. |
+    | Build Preset | Click **Ballerina** because you are creating the REST API from a Ballerina project and WSO2 Developer Platform needs to run a Ballerina build to build it. |
     | Project Path | /b2b-apps/pet-care-app/pet-management-service |
 
 8. Click **Create** to initialize a Service with the implementation from your GitHub repository.
@@ -301,7 +301,7 @@ The Service opens on a separate page where you can see its overview.
 
 ## Step 1.6: Deploy the Pet Management Service
 
-1. Navigate to the **Choreo Console**. You will be viewing an overview of the Pet Management Service.
+1. Navigate to the **WSO2 Developer Platform Console**. You will be viewing an overview of the Pet Management Service.
 2. In the left pane, click **Deploy**, and then click **Configure & Deploy**.
 3. In the **Configure & Deploy** pane, you will be asking to enter values for the **Defaultable Configurables**.
     - You can setup a **Mysql database** to store the service's data. This is **optional**, and if you do not specify database values, the service will save the data in memory. 
@@ -350,7 +350,7 @@ The Service opens on a separate page where you can see its overview.
                 UNIQUE (org, owner)
             );
           ```
-      - Make sure your database is publicly accessible and that your database service allows Choreo IP addresses. Please refer the guide [Connect with Protected Third Party Applications](https://wso2.com/choreo/docs/reference/connect-with-protected-third-party-applications/#connect-with-protected-third-party-applications) for more information.
+      - Make sure your database is publicly accessible and that your database service allows WSO2 Developer Platform IP addresses. Please refer the guide [Connect with Protected Third Party Applications](https://wso2.com/choreo/docs/reference/connect-with-protected-third-party-applications/#connect-with-protected-third-party-applications) for more information.
 
       - Configure the following **Defaultable Configurables** after setting up the database.   
 
@@ -385,7 +385,7 @@ The Service opens on a separate page where you can see its overview.
 If you are not connecting the service to a MySQL database and storing the service's data in memory, then you must follow the steps below to ensure that only one container is running for the **Channel Service** and **Pet Management Service**.
 
 1. Navigate to the **DevOps** section in the component and click **Runtime**.
-2. Make the Min replicas and Max replicas count to **1** and click **Update**. If you are using the free version of Choreo, you will be operating with a single replica. In this case, you can skip the remaining steps.
+2. Make the Min replicas and Max replicas count to **1** and click **Update**. If you are using the free version of WSO2 Developer Platform, you will be operating with a single replica. In this case, you can skip the remaining steps.
 3. Click **Redeploy Release** button.
 4. Make sure to apply the same change to the **Channel Service** and **Pet Management Service**.
 
@@ -401,7 +401,7 @@ Both **Channel Service** and **Pet Management Service** are exposed as APIs. Hen
 
 ## Step 1.9: Test the Services
 
-Let's test the **Pet Management Service** via Choreo's Open API Console by following the steps given below:
+Let's test the **Pet Management Service** via WSO2 Developer Platform's Open API Console by following the steps given below:
 1. Navigate to the **Test** section in the component and click **OpenAPI Console**. This will open up the Open API definition of the service.
 2. Expand the **POST** method of the `/pets` resource and click **Try it out**.
 3. Update the request body as below:
@@ -441,9 +441,9 @@ Now that your services are tested, let's publish **Channel Service** and **Pet M
 
 ## Step 2.1: Enable Asgardeo Key Manager
 
-You can skip this step if you are new to Choreo. If not, follow the below steps to **Enable Asgardeo Key Manager**.
+You can skip this step if you are new to WSO2 Developer Platform. If not, follow the below steps to **Enable Asgardeo Key Manager**.
 
-1. Go to the **Choreo Console** home page, click **Settings**, and then click **API Management**.
+1. Go to the **WSO2 Developer Platform Console** home page, click **Settings**, and then click **API Management**.
 2. On the API Management page, click **Enable Asgardeo Key Manager**.
 
 ![Alt text](readme-resources/enable-km.png?raw=true "Enable Asgardeo Key Manager")
@@ -481,9 +481,9 @@ Now you have generated keys for the application.
 
 ## Step 3.1: Configure the front-end application
 
-In this step, you are going to deploy the pet care front-end application in Choreo.
+In this step, you are going to deploy the pet care front-end application in WSO2 Developer Platform.
 
-1. Navigate to **Choreo Console**.
+1. Navigate to **WSO2 Developer Platform Console**.
 2. Navigate to the **Components** section from the left navigation menu.
 3. Click on the **Create** button.
 4. Click on the **Create** button in the **Web Application** Card.
@@ -495,7 +495,7 @@ In this step, you are going to deploy the pet care front-end application in Chor
     | Description | Web application for managing your pets. |
 
 6. Click on the **Next** button.
-7. To allow Choreo to connect to your **GitHub** account, click **Authorize with GitHub**.
+7. To allow WSO2 Developer Platform to connect to your **GitHub** account, click **Authorize with GitHub**.
 8. In the Connect Repository dialog box, enter the following information:
 
     | Field | Value |
@@ -524,8 +524,8 @@ Let's deploy the front-end application first. Later we can update the configurat
 
 ## Step 4.1: Configure a sub organization
 
-1. Access **Asgardeo** at https://console.asgardeo.io/ and log in with the same credentials with which you logged in to Choreo. 
-2. Verify that you are logged into the **organization** you used for Choreo. Otherwise, select the appropriate **organization** by clicking on the organization menu at the top.
+1. Access **Asgardeo** at https://console.asgardeo.io/ and log in with the same credentials with which you logged in to WSO2 Developer Platform. 
+2. Verify that you are logged into the **organization** you used for WSO2 Developer Platform. Otherwise, select the appropriate **organization** by clicking on the organization menu at the top.
 3. Click **Sub Organizations** in the left navigation menu.
 4. Click **Add Sub Organization** and provide `City Vet Hospital` as the **Organization Name**.
 5. You can provide a description and register the sub organization. 
@@ -614,7 +614,7 @@ A management application must be created in order to use the Asagrdeo management
 
 ## Step 5.1: Update configurations of the front-end application
 
-1. Open the web application you created on **Choreo Console**. Click **DevOps** section in the component and click **Configs & Secrets**.
+1. Open the web application you created on **WSO2 Developer Platform Console**. Click **DevOps** section in the component and click **Configs & Secrets**.
 2. Click **Create**.
 3. Select config type as **Secret** and mount type as **Environment Variables**. Then click **Next**.
 4. Provide the **Config Name** as `web-app-envs`.
